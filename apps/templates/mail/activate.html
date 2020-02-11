@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>激活你的账户</title>
+</head>
+<body>
+    <h1>hello {{ username }}</h1>
+{#    #http://127.0.0.1:5000/activate/你的token#}
+    <p>请点击右边的链接完成激活 <a href="{{ url_for('users.activate',token=token,_external=True) }}">激活</a></p>
+</body>
+</html>
