@@ -12,6 +12,7 @@ class User(UserMixin,db.Model):
     confirmed = db.Column(db.Boolean,default=False)
     icon = db.Column(db.String(64),default='qfnz.jpg')
 
+    posts = db.relationship('Posts',backref='user',lazy='dynamic')
 
     #实现密码 加密
     #对内 password_hash  对外  password

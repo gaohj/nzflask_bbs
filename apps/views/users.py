@@ -130,7 +130,7 @@ def change_icon():
             db.session.add(current_user)
             db.session.commit()
             flash('头像已经保存')
-            return redirect(url_for('uses.change_icon'))
+            return redirect(url_for('users.change_icon'))
     img_url = url_for('users.uploaded',filename=current_user.icon)
     return render_template('users/change_icon.html',img_url=img_url)
 

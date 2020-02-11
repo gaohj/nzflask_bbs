@@ -1,8 +1,24 @@
 {% extends 'common/base.html' %}
 
-
+{% from 'common/macro.html' import pagination_show %}
 {% block title %}博客首页{% endblock %}
 
 {% block page_content %}
-    人间人爱花间花开车见车爆胎的朱道布鲁克
+    {{ wtf.quick_form(form) }}
+    {% for p in posts %}
+        <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{ url_for('static',filename='uploadeds/'+p.user.icon) }}" alt="头像" style="width: 64px;height: 64px">
+
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{ p.user.username }}</h4>
+            {{ p.content }}
+        </div>
+    </div>
+    {% endfor %}
+
+    {{ pagination_show(pagination,'main.index') }}
 {% endblock %}
