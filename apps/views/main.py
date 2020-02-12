@@ -24,7 +24,7 @@ def index():
         #取出所有的博客  类视图  get方法
     # posts = Posts.query.filter_by(rid=0).all()
     page = request.args.get('page',1,type=int) #接收前端用户提交的页码
-    pagination =Posts.query.filter_by(rid=0).order_by(Posts.timestamp.desc()).paginate(page,per_page=5,error_out=False)
+    pagination =Posts.query.filter_by(rid=0).order_by(Posts.timestamp.desc()).paginate(page,per_page=6,error_out=False)
     posts = pagination.items
     return render_template('main/index.html',form=form,posts=posts,pagination=pagination)
 

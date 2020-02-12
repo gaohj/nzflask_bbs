@@ -72,8 +72,10 @@ class LoginView(views.MethodView):
             u = User.query.filter_by(username=form.username.data).first()
             if not u:
                 flash('该用户不存在')
+                return redirect(url_for('users.login'))
             elif not u.confirmed:
                 flash('请先移步邮箱激活该用户')
+                return redirect(url_for('main.index'))
             elif u.verify_password(form.password.data):
                 # 1.将 用户id 或者用户名写入session
                 #2.如果点击了 记住我 那么让过期时间延长
@@ -84,8 +86,7 @@ class LoginView(views.MethodView):
                 #http://10.211.55.3:5000/users/login/?next=%2Fusers%2Fprofile%2F
                 return redirect(request.args.get('next') or url_for('main.index'))
         else:
-            return self.get(message="您的输入不符合要求")
-
+                return self.get(message="您的输入不符合要求")
 users.add_url_rule('/login/',view_func=LoginView.as_view('login'))
 
 @users.route('/logout/')

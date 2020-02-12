@@ -4,12 +4,14 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_mail import Mail
 from flask_login import LoginManager
+from flask_moment import Moment
 #创建扩展的对象
 bootstrap = Bootstrap()
 db = SQLAlchemy()
 migrate = Migrate(db=db)
 mail = Mail()
 login_manager = LoginManager()
+moment = Moment()
 #设置只能上传图片
 # photos = UploadSet('photos',IMAGES) #创建文件上传对象
 #批量将扩展跟app完成绑定
@@ -18,6 +20,7 @@ def config_extensions(app):
     db.init_app(app) #init_app 传入实例 完成绑定
     migrate.init_app(app)
     mail.init_app(app)
+    moment.init_app(app)
     login_manager.init_app(app) #登录管理的初始化
     #指定登录的url地址是什么
     login_manager.login_view = 'users.login'
