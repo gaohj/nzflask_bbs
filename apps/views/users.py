@@ -37,7 +37,7 @@ class RegisterView(views.MethodView):
             db.session.add(u)
             db.session.commit()
             #如果注册成功 生成token    该token会通过邮件发送给 用户注册时填的邮箱
-            token = u.gernerate_active_token()
+            token = u.generate_activate_token()
             # print(token)
             #发送邮件
             send_mail(u.email,'账户激活','mail/activate',username=u.username,token=token)
@@ -123,8 +123,8 @@ def change_icon():
             img.save(pathname)
 
             #文件上传成功以后
-            # gaogao123   qfnz.jpg  qf.png  python.gif
-            if current_user.icon != 'qfnz.jpg':
+            # gaogao123   default.jpg  qf.png  python.gif
+            if current_user.icon != 'default.jpg':
                 os.remove(os.path.join(current_app.config['UPLOADED_PHOTOS_DEST'], current_user.icon))
 
             current_user.icon = filename

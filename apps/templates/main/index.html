@@ -34,7 +34,7 @@
     <script type="text/javascript">
         $(function () {
             $('.collect').click(function () {
-                _this = this
+                _this = this //防止进入下一级作用域this失效
                 $.get($(this).attr('url'), function () {
                     if ($(_this).text() == '收藏') {
                         $(_this).text('取消收藏')

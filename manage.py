@@ -1,7 +1,8 @@
 from flask_script import Manager
 from apps import create_app
 from flask_migrate import MigrateCommand
-from apps.models import User,Posts
+from apps.models.users import User
+from apps.models.posts import Posts
 from apps.extensions import db
 
 #python manage.py db init
