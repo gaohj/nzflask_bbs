@@ -16,7 +16,10 @@ class User(UserMixin,db.Model):
     posts = db.relationship('Posts',backref='user',lazy='dynamic')
 
     #添加收藏操作 跟中间表建立关联
-    favorites = db.relationship('Posts',secondary='collections',backref=db.backref('users',lazy='dynamic'),lazy='dynamic')
+    # 添加收藏功能
+    favorites = db.relationship('Posts', secondary='collections', backref=db.backref('users', lazy='dynamic'),
+                                lazy='dynamic')
+
     #实现密码 加密
     #对内 password_hash  对外  password
     @property  #把方法当作属性来对待
@@ -61,28 +64,24 @@ class User(UserMixin,db.Model):
 #登录成功之后的回调函数
 #你登陆成功了 拿到你的详细信息  然后在页面上显示  你好玉玉
     #判断用户是否收藏了指定的博客
-    def is_favorite(self,pid):
-        #获取用户收藏的所有帖子
-        #判断指定的博客是否在列表中
+        # 判断该用户是否收藏了指定的博客
+    def is_favorite(self, pid):
+        # 获取所有收藏的博客
         favorites = self.favorites.all()
-        # for p  in favorites:
-        #     filter(p.id == pid)
-        posts = list(filter(lambda p: p.id == pid,favorites))
-        if len(posts)>0:
+        posts = list(filter(lambda p: p.id == pid, favorites))
+        if len(posts) > 0:
             return True
-        else:
-            return False
+        return False
     #收藏博客
     def add_favorite(self,pid):
         #模型中favorites 代表用户的收藏
         p = Posts.query.get(pid)
         self.favorites.append(p)
-        db.session.commit()
     #取消收藏博客
     def del_favorite(self,pid):
         p = Posts.query.get(pid)
         self.favorites.remove(p)
-        db.session.commit()
+
 @login_manager.user_loader
 def load_user(uid):
     return User.query.get(int(uid))
