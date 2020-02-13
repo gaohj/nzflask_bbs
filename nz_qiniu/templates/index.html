@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>头像上传</title>
+
+    <script src="https://cdn.staticfile.org/Plupload/2.1.1/moxie.js"></script>
+    <script src="https://cdn.staticfile.org/Plupload/2.1.1/plupload.dev.js"></script>
+    <script src="{{ url_for('static',filename='qiniu_sdk.js') }}"></script>
+    <script src="{{ url_for('static',filename='qfqiniu.js') }}"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            qfqiniu.setUp({
+                'domain':'http://q5mfwvnoa.bkt.gdipper.com/', //七牛云提供给我们的下载域名
+                'browse_button':'upload-btn', //获取上传的按钮
+                'uptoken_url':'/gettoken/',  //从服务器获取token
+                'success':function (up,file,info) {
+                    var img_url = file.name
+                    alert(img_url)
+                    var imgInput = document.getElementById('img-input')
+                    imgInput.value = img_url
+                    var img = document.getElementsByTagName('img')[0]
+
+                    img.setAttribute('src',img_url)
+
+                }
+
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <button id="upload-btn">上传</button>
+    <input type="text" id="img-input">
+{#    图片上传成功 返回的地址在输入框中显示 #}
+    <img src="" alt="" id="img">
+</body>
+</html>
