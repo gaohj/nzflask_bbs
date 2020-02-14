@@ -1,0 +1,23 @@
+{% extends 'common/base.html' %}
+
+{% block title %} 千锋Tornado {% end %}
+{% block css %}
+<link rel="stylesheet" href="{{ static_url('css/index.css') }}">
+
+{% end %}
+
+
+{% block content %} 消息不提示确实很考验基本功
+
+    {# 注释   <!--{%%} 标签  for while if -->
+    <!--{{变量}}-->#}
+
+    {% set age = 18 %}
+
+    {{ age }}
+    {% if age < 18 %}
+        <p>该回家吃饭了</p>
+    {% else %}
+       <p>欢迎光临红浪漫</p>
+    {% end %}
+{% end %}

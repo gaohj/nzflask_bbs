@@ -1,0 +1,17 @@
+{% extends 'common/base.html' %}
+
+
+{% block title %}千锋主页{% end %}
+
+{% block content %}
+    {{ item }}
+    {% for a in item %}
+        {% if a== '苍老师' %}
+        <p style="color: green">{{a}}</p>
+        {% elif a == '吉老师' %}
+        <p style="color: red">{{a}}</p>
+        {% else%}
+        {{a}}
+        {% end %}
+    {% end %}
+{% end %}
