@@ -24,7 +24,7 @@ api =Api(bp)
 # api.add_resource(ArticleView,'/')
 class ArticleView(Resource):
     resource_fields = {
-        'title':fields.String,
+        'wangbo_title':fields.String(attribute='title'),
         'content':fields.String,
         'author':fields.Nested({
             'username':fields.String,

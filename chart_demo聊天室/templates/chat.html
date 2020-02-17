@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到红浪漫聊天室,小姐姐等候多时</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>欢迎 {{ username }}</h1>
+    <p>当前账号:</p>
+    <div id="chat" style="width: 300px;height: 300px;border: 1px solid pink">
+
+    </div>
+    <input type="text" name="content" id="content">
+    <input type="button" value="发送" id="btn">
+
+    <script>
+        $(function () {
+            if("WebSocket" in window){
+                alert('您的浏览器支持WebSocket')
+                var ws = new WebSocket("ws://127.0.0.1:8080/chat/") //服务端socket地址
+                // ws.onopen = function () {
+                //     ws.send('发送数据')
+                //     console.log('连接已经建立')
+                // }
+                //接收服务端推过来的消息
+                ws.onmessage = function (evt) {
+                   var data = evt.data;
+                   $('#chat').append('<br />')
+                   $('#chat').append(data);
+
+                }
+
+                $('#btn').click(function () {
+                    //获取输入框内容
+                    var content = $('#content').val()
+                    ws.send(content)
+                })
+
+                ws.onerror = function(e){
+                    console.log(e)
+                }
+
+                ws.onclose = function () {
+                    console.log('连接已经关闭')
+                }
+            }else{
+                alert('您的浏览器不支持WebSocket')
+            }
+        })
+    </script>
+</body>
+</html>
