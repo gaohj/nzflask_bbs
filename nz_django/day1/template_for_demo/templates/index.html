@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for案例</title>
+</head>
+<body>
+   <ul>
+       {% for book in books  %}
+            <li>{{ book }}</li>
+       {% endfor %}
+
+   </ul>
+
+    <ul>
+        {% for keys,value in persons.items %}
+            <li>{{ keys }}/{{ value }}</li>
+        {% endfor %}
+
+    </ul>
+
+    <table border="1px">
+        <thead>
+            <tr>
+                <td>序号</td>
+                <td>书名</td>
+                <td>作者</td>
+                <td>价格</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for books in bookses %}
+                {% if forloop.first %}
+                    <tr style="color:red">
+                {% elif forloop.last %}
+                    <tr style="color:green">
+                {% else %}
+                    <tr>
+                {% endif %}
+
+                    <td>{{ forloop.revcounter }}</td>
+                    <td>{{ books.name }}</td>
+                    <td>{{ books.author }}</td>
+                    <td>{{ books.price }}</td>
+                </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+   
+    <ul>
+        {% for comment in commets  %}
+                {{ comment }}
+        {% empty %}
+                这个人很懒什么都没留下
+        {% endfor %}
+
+    </ul>
+</body>
+</html>
