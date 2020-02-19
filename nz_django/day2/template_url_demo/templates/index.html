@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>千锋武汉Python1904</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://v3.bootcss.com/examples/starter-template/starter-template.css" rel="stylesheet">
+    <script src="{% static 'template-web.js' %}"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">千锋</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">博客</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="{% url 'index' %}">首页</a></li>
+            <li><a href="{% url 'detail' category=1 book_id=100 %}">详情页</a></li>
+            <li><a href="{% url 'book' %}">图书</a></li>
+            <li><a href="{% url 'movie' %}">电影</a></li>
+            <li><a href="{% url 'music' %}">音乐</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+{#   {% autoescape off %}#}
+          {#{#               <p class="lead">{{ info }}</p>#}
+          {#{#         {% endautoescape %}#}
+        {% if age <= 18 %}
+            <p>回家找你妈妈吃饭</p>
+            {% elif age == 18  %}
+            <p>欢迎加入炸天帮</p>
+            {% else %}
+            <p>who are you</p>
+        {% endif %}
+      </div>
+      <div id="content"></div>
+
+             {% verbatim %}
+              <script id="test" type="text/html">
+                  {{ if isAdmin}}
+
+                  <h1>{{ title }}</h1>
+                  <ul>
+                      {{ each list value i}}
+                      <li>索引 {{ i + 1}} ：{{ value }}</li>
+                      {{/each}}
+                  </ul>
+
+                  {{/if}}
+                  {{$data}}
+              </script>
+             {% endverbatim %}
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+
+
+        var data = {
+            title: '基本例子',
+            isAdmin: true,
+            list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+        };
+        var html = template('test', data);
+        document.getElementById('content').innerHTML = html;
+    </script>
+
+  </body>
+</html>
