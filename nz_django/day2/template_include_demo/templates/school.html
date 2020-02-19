@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{#必须放在第一行#}
+
+{% block title %}
+学校首页
+{% endblock %}
+
+{% block contents %}
+    {{ block.super }}
+学校最新动态,武汉学校复工应该很慢，但是不会太慢 {{ username }}
+{% endblock %}
