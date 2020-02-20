@@ -1,4 +1,4 @@
-"""db_relation_demo URL Configuration
+"""look_up_demo URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -15,11 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from cms import views
+from front import views
 
 urlpatterns = [
     path('',views.index,name='index'),
-    path('one_to_many/',views.one_to_many,name='one_to_many'),
-    path('one_to_one/',views.one_to_one,name='one_to_one'),
-    path('many_to_many/',views.many_to_many,name='many_to_many'),
+    path('index1/',views.index1,name='index1'),
+    path('index2/',views.index2,name='index2'),
+    path('index3/',views.index3,name='index3'),
+    path('index4/',views.index4,name='index4'),
+    path('index5/',views.index5,name='index5'),
+    path('index6/',views.index6,name='index6'),
+    path('index7/',views.index7,name='index7'),
 ]
