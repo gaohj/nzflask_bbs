@@ -1,4 +1,4 @@
-"""form_demo2 URL Configuration
+"""uploadfile_demo URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -18,5 +18,4 @@ from django.urls import path
 from front import views
 urlpatterns = [
     path('',views.IndexView.as_view(),name='index'),
-    path('signup/',views.RegisterView.as_view(),name='signup'),
 ]
