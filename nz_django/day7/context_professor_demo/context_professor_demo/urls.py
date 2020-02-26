@@ -19,5 +19,10 @@ from front import views
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
-    path('haha/', views.index,name='index'),
+    path('', views.index,name='index'),
+    path('signup/', views.SignupView.as_view(),name='signup'),
+    path('signin/', views.SigninView.as_view(),name='signin'),
+    path('logout/', views.logout,name='logout'),
+    path('blog/', views.blog,name='blog'),
+    path('video/', views.video,name='video'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

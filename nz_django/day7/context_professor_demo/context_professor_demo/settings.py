@@ -65,6 +65,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
+                'front.context_processors.front_user',
             ],
         },
     },
@@ -122,6 +123,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 INTERNAL_IPS = ['127.0.0.1']
-
+# 只有127.0.0.1 才可以看到  {{debug}} {{sql_queries}}
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'

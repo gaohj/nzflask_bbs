@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect,reverse
 from .models import User
-# Create your views here.
+from django.views import View
+from .forms import SignupForm,SigninForm
+from django.contrib import messages
 def index(request):
     # users = []
     # for x in range(0,51):
@@ -12,3 +14,50 @@ def index(request):
         'users':users
     }
     return render(request,'index.html',context=context)
+
+class SigninView(View):
+    def get(self,request):
+        return render(request,'signin.html')
+    def post(self,request):
+        form = SigninForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = User.objects.filter(username=username,password=password).first()
+            if user:
+                request.session['user_id'] = user.id
+                return redirect(reverse('index'))
+            else:
+                 # print('用户名或者密码错误')
+                 messages.info(request,'用户名或者密码错误')
+                 return redirect(reverse('signin'))
+        else:
+            # print(form.get_errors())
+            errors = form.get_errors() #结果是列表
+            for error in errors:
+                messages.info(request,error)
+            return redirect(reverse('signin'))
+
+
+class SignupView(View):
+    def get(self,request):
+        return render(request,'signup.html')
+    def post(self,request):
+        form = SignupForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('index'))
+        else:
+            print(form.errors.get_json_data())
+            return redirect(reverse('signup'))
+
+def logout(request):
+    #request.session.clear() #清除当前用户的session
+    request.session.flush() #清除当前用户的session并且删除浏览器存储的session_id 注销一般用这个
+    return redirect(reverse('index'))
+
+
+def blog(request):
+    return render(request,'blog.html')
+def video(request):
+    return render(request,'video.html')
