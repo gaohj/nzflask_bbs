@@ -81,6 +81,8 @@ else:
 
 ### 1. 设置Proxy模型：
 
+> 代理模型不能添加字段 
+
 如果你对`Django`提供的字段，以及验证的方法都比较满意，没有什么需要改的。但是只是需要在他原有的基础之上增加一些操作的方法。那么建议使用这种方式。示例代码如下：
 
 ```python
@@ -247,4 +249,252 @@ class UserManager(BaseUserManager):
    ```
 
 **这种方式因为破坏了原来User模型的表结构，所以必须要在第一次**`migrate`**前就先定义好。**
+
+
+
+## 登录  
+
+> django.contrib.auth.login 
+
+```python
+from .forms import LoginForm
+from django.contrib.auth import login,logout
+def my_login(request):
+    if request.method == 'GET':
+        return render(request,'login.html')
+    else:
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            telephone = form.cleaned_data.get('telephone')
+            password = form.cleaned_data.get('password')
+            remember = form.cleaned_data.get('remember')
+            user = authenticate(request,username=telephone,password=password)#返回一个user对象
+            if user and user.is_active:
+                #登录
+                login(request,user)
+                if remember:
+                    #None 表示使用全局的过期时间 两周
+                    request.session.set_expiry(None)
+                else:
+                    request.session.set_expiry(0)
+                next_url = request.GET.get('next')
+                if next_url:
+                    return redirect(next_url)
+                else:
+                    return redirect(reverse('index'))
+            else:
+                return HttpResponse("用户名或者密码错误")
+        else:
+            print(form.errors)
+            return redirect(reverse('signin'))
+```
+
+
+
+
+
+## 注销 
+
+>   django.contrib.auth.logout
+
+```python
+def my_logout(request):
+    logout(request)
+    return redirect(reverse('signin'))
+```
+
+
+
+## 登录限制  
+
+>  django.contrib.auth.decorators.login_required
+
+```python
+@login_required(login_url='/signin/') #参数为登录的url地址 
+#如果没有登录那么会跳转到登录的url地址 在后面拼接上 next=/profile/
+def profile(request):
+    return HttpResponse("个人中心页面")
+```
+
+
+
+## 权限   
+
+> django的权限是模型级别 也就是说针对于表 也就是该用户在某个模型上是否可以增删改查 不能针对于数据级别  
+>
+> 创建完一个模型默认有增删改三个权限
+>
+> 如果想针对于数据级别操作  那么可以使用 django-guardian   
+
+
+
+### 通过模型添加权限  
+
+```python
+from django.contrib.auth import get_user_model #获取当前项目的用户模型 
+class Article(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+    author = models.ForeignKey(get_user_model(),on_delete=models.CASCADE)
+
+    class Meta:
+        permissions = (
+            ('view_article','查看文章'), #第一参数是codename 第二个参数是  name
+        )
+```
+
+
+
+### 通过代码添加权限  
+
+```python
+from .models import Article
+from django.contrib.auth.models import ContentType
+from django.contrib.auth.models import Permission
+
+def add_permission(request):
+    #给哪个模型添加权限 先获取该模型的content_type_id
+    #从content_type表中获取
+    content_type = ContentType.objects.get_for_model(Article)
+    permission = Permission.objects.create(codename='black_list',name='拉黑文章',content_type=content_type)
+    return HttpResponse("权限创建成功")
+```
+
+
+
+### 给用户添加权限 
+
+> 权限是个数据 必须和用户绑定才能起作用 
+
+* 用户对象.user_permissions.set()  给一个权限列表  
+* 用户对象.user_permissions.add() 一个个添加权限啊 
+* 用户对象.user_permissions.remove() 一个个删除权限  
+* 用户对象.user_permissions.clear() 清除权限 
+* 用户对象.has_perm() 判断是否有这个权限  
+* 用户对象.get_all_permisssions() 获取所有的权限 
+
+```python
+def operate_permission(request):
+    #创建用户对象
+    user = User.objects.first()
+    #如果先给用户操作文章的权限 应该先把文章相关的权限找出来  然后绑定在用户上面
+    #查找文章对应的content_type_id
+    content_type = ContentType.objects.get_for_model(Article)
+    permissions = Permission.objects.filter(content_type=content_type)
+    # user.user_permissions.add(permissions[0]) #添加一个权限
+    # user.save()
+    #for permission in permissions:
+        # print(permission)
+    # user.user_permissions.set(permissions)  #添加权限列表
+    # user.save()
+    # user.user_permissions.clear()#清空权限
+    #user.user_permissions.remove(*permissions)#清空权限
+    user.user_permissions.remove(permissions[0])#清空一个权限 
+    if user.has_perm('front.view_article'):
+        print('拥有view_article这个权限')
+    else:
+        print('没有view_article这个权限')
+    print(user.get_all_permissions()) #字典 获取所有的权限
+    return HttpResponse("操作权限成功")
+```
+
+
+
+## 给方法限定权限 
+
+```python
+def add_article(request):
+    #判断用户是否登录了
+    if request.user.is_authenticated:
+        print('您已经登录')
+    #判断是否有这个权限
+        if request.user.has_perm('front.add_article'):
+            return HttpResponse('这是添加文章的页面')
+        #如果没有权限 让你重新换个有权限的账户登录
+        else:
+            return HttpResponse('您没有相关权限奥利给',status=403)
+    else:
+        return redirect(reverse('signin'))
+```
+
+
+
+## 权限限定装饰器 
+
+```python
+from django.contrib.auth.decorators import permission_required
+@permission_required(['front.add_article','front.view_article'],login_url='/signin/',raise_exception=True)
+def add_article(request):
+    return HttpResponse('这是添加文章的页面')
+    
+#如果raise_exception=True 设置为True 那么直接抛出403错误表示没有权限
+#如果raise_exception=Flase 那么 跳到登录页面 
+```
+
+
+
+## 模板上 
+
+```
+   perms.应用.code_name  因为系统具备上下文处理器 auth 
+   {% if perms.front.add_article %}
+            <li class="active"><a href="{% url 'add' %}"><i class="fa fa-link"></i> 				<span>添加文章</span></a></li>
+   {% endif %}
+```
+
+
+
+## 创建组  
+
+```python
+#添加分组 给组添加权限  创建用户以后 把他加入到指定的组里
+#  不再一个个添加权限
+from django.contrib.auth.models import Group
+def operate_group(request):
+    group = Group.objects.create(name='管理员')
+```
+
+
+
+### 给组添加权限 
+
+> group.permissions.set（）添加权限 列表
+>
+> group.permissions.add（）添加一个权限
+>
+> group.permissions.remove（） 移除指定的权限 
+>
+> group.permissions.clear（） 清空权限
+>
+> user.get_group_permissions（） 获取用户所属组的权限
+
+```
+from django.contrib.auth.models import Group
+def operate_group(request):
+    # group = Group.objects.create(name='管理员')
+    content_type = ContentType.objects.get_for_model(Article)
+    permissions = Permission.objects.filter(content_type=content_type)
+    # group.permissions.set(permissions)
+    # group.save()
+    
+    #把用户添加到指定的组里 
+    # group = Group.objects.first() #获取指定的组
+    # user = User.objects.first()
+    # user.groups.add(group)
+    # user.save()
+
+    user = User.objects.first()
+    permissions = user.get_group_permissions() #获取用户所属组的权限 
+    print(permissions)
+    return HttpResponse('这是操作组')
+	
+	if user.has_perms(['front.add_article','front.view_article']):
+		print('y')
+	else:
+		print('n')
+
+用户权限 有  组没有  那么以用户权限为准
+```
+
+
 

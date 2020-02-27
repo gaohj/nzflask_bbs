@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User,AbstractUser,BaseUserManager
+from django.contrib.auth.models import AbstractUser,BaseUserManager,AbstractBaseUser,PermissionsMixin
 from django.core import validators
 from django.dispatch import receiver #接收
 from django.db.models.signals import post_save
@@ -28,38 +28,71 @@ from django.db.models.signals import post_save
 #     else:
 #         instance.extension.save()
 class UserManager(BaseUserManager):
-    def _create_user(self, username, email, password, **extra_fields):
-
+    def _create_user(self, telephone,username, email, password, **kwargs):
+        if not telephone:
+            raise ValueError('The given telephone must be set')
+        if not password:
+            raise ValueError('The given password must be set')
         if not username:
             raise ValueError('The given username must be set')
-        email = self.normalize_email(email)
-        username = self.model.normalize_username(username)
-        user = self.model(username=username, email=email, **extra_fields)
+        user = self.model(telephone=telephone,username=username, email=email, **kwargs)
         user.set_password(password)
-        user.save(using=self._db)
+        user.save()
         return user
 
-    def create_user(self, username, email=None, password=None, **extra_fields):
-        extra_fields.setdefault('is_staff', False)
-        extra_fields.setdefault('is_superuser', False)
-        return self._create_user(username, email, password, **extra_fields)
+    def create_user(self, telephone,username, email,password, **kwargs):
+        kwargs['is_staff'] = False
+        kwargs['is_superuser'] = False
+        return self._create_user(telephone=telephone, username=username,email=email, password=password, **kwargs)
 
-    def create_superuser(self, username, email, password, **extra_fields):
-        extra_fields.setdefault('is_staff', True)
-        extra_fields.setdefault('is_superuser', True)
-
-        if extra_fields.get('is_staff') is not True:
-            raise ValueError('Superuser must have is_staff=True.')
-        if extra_fields.get('is_superuser') is not True:
-            raise ValueError('Superuser must have is_superuser=True.')
-
-        return self._create_user(username, email, password, **extra_fields)
+    def create_superuser(self, telephone,username, email, password, **kwargs):
+        kwargs['is_staff'] = True
+        kwargs['is_superuser'] = True
+        return self._create_user(telephone=telephone,username=username, email=email, password=password, **kwargs)
 
 
-class User(AbstractUser):
-    telephone = models.CharField(max_length=11,validators=[validators.RegexValidator(r'1[3-9]\d{9}',message='请输入正确的手机号')],unique=True)
-    school = models.CharField(max_length=60)
+# class User(AbstractUser):
+#     telephone = models.CharField(max_length=11,validators=[validators.RegexValidator(r'1[3-9]\d{9}',message='请输入正确的手机号')],unique=True)
+#     school = models.CharField(max_length=60)
+#
+#     objects = UserManager()
+#     EMAIL_FIELD = 'email'
+#     USERNAME_FIELD = 'telephone'
+
+class User(AbstractBaseUser,PermissionsMixin):
+    telephone = models.CharField(max_length=11,
+                                 validators=[validators.RegexValidator(r'1[3-9]\d{9}', message='请输入正确的手机号')],
+                                 unique=True)
+    email = models.CharField(max_length=100,validators=[validators.EmailValidator(message='邮箱格式不符合要求')],unique=True)
+    username = models.CharField(max_length=100,unique=True)
+    is_staff = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
+    is_superuser = models.BooleanField(default=False)
 
     objects = UserManager()
+
     EMAIL_FIELD = 'email'
     USERNAME_FIELD = 'telephone'
+    REQUIRED_FIELDS = []
+
+
+    def get_full_name(self):
+        return self.username
+
+    def get_short_name(self):
+        return self.username
+
+    def get_black_list(self):
+        return self.objects.filter(is_active=False)
+
+
+from django.contrib.auth import get_user_model
+class Article(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+    author = models.ForeignKey(get_user_model(),on_delete=models.CASCADE)
+
+    class Meta:
+        permissions = (
+            ('view_article','查看文章'),
+        )

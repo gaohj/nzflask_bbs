@@ -239,7 +239,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
+{#        {% if perms.front.add_article %}#}
+            <li class="active"><a href="{% url 'add' %}"><i class="fa fa-link"></i> <span>添加文章</span></a></li>
+{#        {% endif %}#}
         <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>

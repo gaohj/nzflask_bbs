@@ -20,5 +20,14 @@ from front import views
 urlpatterns = [
     path('',views.index,name='index'),
     path('proxy/',views.proxy_view,name='proxy'),
+    path('add/',views.add_article,name='add'),
+    path('group/',views.operate_group,name='group'),
     path('one/',views.one_view,name='one'),
+    path('inherit/',views.inherit_view,name='inherit'),
+    path('signin/',views.my_login,name='signin'),
+    path('logout/',views.my_logout,name='logout'),
+    path('profile/',views.profile,name='profile'),
+    path('operate_permission/',views.operate_permission,name='operate_permission'),
+    path('add_permission/',views.add_permission,name='add_permission'),
+
 ]
