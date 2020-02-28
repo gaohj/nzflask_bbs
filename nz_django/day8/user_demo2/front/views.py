@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect,reverse
 from django.http import HttpResponse
-# from django.contrib.auth.models import User
+from django.contrib.auth.models import User
 from .models import User
 from django.contrib.auth import authenticate
 # from .models import Person
@@ -158,6 +158,7 @@ def operate_permission(request):
 
 from django.contrib.auth.decorators import permission_required
 
+#http://127.0.0.1:8000/add_article/
 @permission_required(['front.add_article','front.view_article'],login_url='/signin/',raise_exception=True)
 def add_article(request):
     # #判断用户是否登录了
