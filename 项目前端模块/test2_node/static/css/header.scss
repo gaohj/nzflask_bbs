@@ -1,0 +1,22 @@
+@import 'init.scss';
+@import 'constants.scss';
+.test{
+    width: 500px;
+    height: 600px;
+    .container{
+        width: 200px;
+        height: 200px;
+        background-color:blue;
+        p{
+            width:$pageWidth;
+            height:$pageHeight;
+            font-size: 20px;
+        }
+    }
+}
+
+
+body {
+    width: $bodyWidth/10;
+    height: $bodyHeight/10;
+}
