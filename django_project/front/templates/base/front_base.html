@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/common/auth.min.css' %}">
     <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'js/message.min.js' %}"></script>
-    <script src="{% static 'js/xfzajax.min.js' %}"></script>
+    <script src="{% static 'js/qfajax.min.js' %}"></script>
     <script src="{% static 'js/front_base.min.js' %}"></script>
     {% block head %}{% endblock %}
 </head>
@@ -29,19 +29,18 @@
 
             <div class="auth-box">
                 <i class="icon-person iconfont"></i>
+                    {% if user.is_authenticated  %}
 
-{#                    <a href="#" class="authenticated-box">{{ user.username }}</a>#}
-{#                    <div class="user-more-box">#}
-{#                        <i class="triangle"></i>#}
-{#                         {% if user.is_staff %}#}
-{#                            <a href="{% url 'cms:index' %}">管理系统</a>#}
-{#                          {% endif %}#}
-{#                        <a href="{% url 'qfauth:logout' %}">退出登录</a>#}
-{#                    </div>#}
-
+                    <a href="#" class="authenticated-box">{{ user.username }}</a>
+                    <div class="user-more-box">
+                        <i class="triangle"></i>
+                            <a href="{% url 'cms:index' %}">管理系统</a>
+                            <a href="{% url 'qfauth:logout' %}">退出登录</a>
+                    </div>
+                    {% else %}
                     <a href="#" class="signin-btn">登录</a> /
                     <a href="#" class="signup-btn">注册</a>
-
+                    {% endif %}
             </div>
         </div>
     </header>
