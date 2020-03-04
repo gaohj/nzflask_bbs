@@ -4,7 +4,7 @@ from django.views.generic import View
 from apps.news.models import NewsCategory,News,Comment
 from utils import restful_res
 from django.views.decorators.http import require_POST,require_GET
-
+from .forms import WriteNewsForm
 @require_GET
 def index(request):
     return render(request,'cms/index.html')
@@ -37,8 +37,20 @@ class WriteNewsView(View):
             'categories':categories
         }
         return render(request,'cms/write_news.html',context=context)
-
-
+    def post(self,request):
+        form = WriteNewsForm(request.POST)
+        if form.is_valid():
+            title = form.cleaned_data.get('title')
+            desc = form.cleaned_data.get('desc')
+            content = form.cleaned_data.get('content')
+            thumbnail = form.cleaned_data.get('thumbnail')
+            category_id = form.cleaned_data.get('category')
+            category = NewsCategory.objects.get(pk=category_id)
+            print(title,content,thumbnail)
+            News.objects.create(title=title,desc=desc,content=content,thumbnail=thumbnail,author=request.user,category=category)
+            return restful_res.success()
+        else:
+            return restful_res.params_error(message=form.get_errors())
 import qiniu
 from django.conf import settings
 def qiniu_token(request):

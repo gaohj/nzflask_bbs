@@ -19,5 +19,6 @@ from django.urls import path,include
 urlpatterns = [
     path('account/', include('apps.qfauth.urls')), #认证地址
     path('cms/', include('apps.cms.urls')), #管理后台
-    path('news/', include('apps.news.urls')), #管理后台
+    path('news/', include('apps.news.urls')), #前台
+    path('ueditor/', include('apps.ueditor.urls')), #ueditor
 ]

@@ -133,6 +133,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'front','dist')
 ]
 
+MEDIA_URL ='/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 #缓存配置
 CACHES = {
@@ -149,3 +151,17 @@ QINIU_ACCESS_KEY = 'p_p2-jutlTI1mlPCSfMEO8DyZnkQaiFrd9IOlvpz'
 QINIU_SECRET_KEY = 'rN0YQux570vbhL5d8QvShrV-SnjzTdqhlfWstWri'
 QINIU_BUCKET_NAME = 'djangoproject'
 QINIU_DOMAIN = 'http://q6ntqeh25.bkt.clouddn.com/'
+
+
+#配置Ueditor
+
+UEDITOR_QINIU_ACCESS_KEY = QINIU_ACCESS_KEY
+UEDITOR_QINIU_SECRET_KEY = QINIU_SECRET_KEY
+UEDITOR_QINIU_BUCKET_NAME = QINIU_BUCKET_NAME
+UEDITOR_QINIU_DOMAIN = QINIU_DOMAIN
+UEDITOR_UPLOAD_PATH = MEDIA_ROOT
+UEDITOR_UPLOAD_TO_QINIU = False
+UEDITOR_UPLOAD_TO_SERVER = True
+UEDITOR_CONFIG_PATH = os.path.join(BASE_DIR,'front','dist','ueditor','config.json')
+
+
