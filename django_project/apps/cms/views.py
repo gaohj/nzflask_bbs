@@ -37,3 +37,16 @@ class WriteNewsView(View):
             'categories':categories
         }
         return render(request,'cms/write_news.html',context=context)
+
+
+import qiniu
+from django.conf import settings
+def qiniu_token(request):
+    access_key = settings.QINIU_ACCESS_KEY
+    secret_key = settings.QINIU_SECRET_KEY
+    bucket = settings.QINIU_BUCKET_NAME
+
+    q = qiniu.Auth(access_key,secret_key)
+    token = q.upload_token(bucket)
+
+    return restful_res.result(data={"token":token})

@@ -144,4 +144,8 @@ CACHES = {
 
 
 
-#
+#配置七牛
+QINIU_ACCESS_KEY = 'p_p2-jutlTI1mlPCSfMEO8DyZnkQaiFrd9IOlvpz'
+QINIU_SECRET_KEY = 'rN0YQux570vbhL5d8QvShrV-SnjzTdqhlfWstWri'
+QINIU_BUCKET_NAME = 'djangoproject'
+QINIU_DOMAIN = 'http://q6ntqeh25.bkt.clouddn.com/'
