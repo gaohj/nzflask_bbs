@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from django.shortcuts import reverse,redirect
 from utils import restful_res
 from utils.captcha.qfcaptcha import Captcha
+from utils.aliyun_sms import send_sms
 from django.contrib.auth import get_user_model
 from io import BytesIO
 from django.core.cache import cache
@@ -44,7 +45,8 @@ def register_view(request):
     if form.is_valid():
         telephone = form.cleaned_data.get('telephone')
         username = form.cleaned_data.get('username')
-        password = form.cleaned_data.get('password')
+        password = form.cleaned_data.get('password1')
+        print(telephone,username,password)
         user = User.objects.create_user(telephone=telephone,username=username,password=password)
         login(request,user)
         return restful_res.success()
@@ -73,6 +75,19 @@ def img_captcha(request):
 
 
     return response
+
+
+def sms_captcha(request):
+    #接收手机号 /sms_captcha/?telephone=13888888888
+    telephone = request.GET.get('telephone')
+    #生成随机字符串
+    text = Captcha.gene_text()
+    #同时放到缓存中
+    cache.set(telephone,text,5*60)
+    print('短信验证码:',text)
+    #调用阿里云短信 发送到接收的手机号上面
+    send_sms(telephone,text)
+    return restful_res.success()
 
 def cache_test(request):
     cache.set('username','kangbazi',60)

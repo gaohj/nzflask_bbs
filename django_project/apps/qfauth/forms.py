@@ -31,6 +31,10 @@ class RegisterForm(forms.Form,FormMixin):
 
 
         #验证短信验证码
+        sms_captcha = cleaned_data.get('sms_captcha')  # 用户输入的
+        cache_sms_captcha = cache.get(sms_captcha.lower())  # 缓存中的
+        if not cache_sms_captcha or sms_captcha.lower() != cache_sms_captcha.lower():
+            raise forms.ValidationError('短信验证码输入错误')
 
         telephone = cleaned_data.get('telephone')
         exists = User.objects.filter(telephone=telephone).exists()
