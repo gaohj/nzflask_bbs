@@ -26,17 +26,19 @@ class RegisterForm(forms.Form,FormMixin):
         #验证图形验证码
         img_captcha = cleaned_data.get('img_captcha')#用户输入的
         cache_img_captcha = cache.get(img_captcha.lower()) #缓存中的
+        print(cache_img_captcha)
         if not cache_img_captcha or img_captcha.lower() != cache_img_captcha.lower():
             raise forms.ValidationError('图形验证码输入错误')
 
 
         #验证短信验证码
+        telephone = cleaned_data.get('telephone')
         sms_captcha = cleaned_data.get('sms_captcha')  # 用户输入的
-        cache_sms_captcha = cache.get(sms_captcha.lower())  # 缓存中的
+        cache_sms_captcha = cache.get(telephone)  # 缓存中的
         if not cache_sms_captcha or sms_captcha.lower() != cache_sms_captcha.lower():
             raise forms.ValidationError('短信验证码输入错误')
 
-        telephone = cleaned_data.get('telephone')
+
         exists = User.objects.filter(telephone=telephone).exists()
         if exists:
             forms.ValidationError('该手机号已经被注册')

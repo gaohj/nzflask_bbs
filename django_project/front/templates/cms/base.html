@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% block title %}{% endblock %} | 91管理系统</title>
+    <title>{% block title %}{% endblock %} | 千锋学生管理系统</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="{% static 'adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'adminlte/bower_components/font-awesome/css/font-awesome.min.css' %}">
@@ -15,7 +15,7 @@
     <script src="{% static 'adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'adminlte/dist/js/adminlte.min.js' %}"></script>
     <script src="{% static 'sweetalert/sweetalert.min.js' %}"></script>
-    <script src="{% static 'js/xfzajax.min.js' %}"></script>
+    <script src="{% static 'js/qfajax.min.js' %}"></script>
     <script src="{% static 'js/xfzalert.min.js' %}"></script>
     <script src="{% static 'js/message.min.js' %}"></script>
     {% block head %}{% endblock %}
@@ -28,7 +28,7 @@
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>CMS</b></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">python1903后台管理系统</span>
+            <span class="logo-lg">python1904后台管理系统</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -61,7 +61,7 @@
                                     <a href="#" class="btn btn-default btn-flat">个人中心</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="{% url 'projectauth:logout' %}" class="btn btn-default btn-flat">退出登录</a>
+                                    <a href="{% url 'qfauth:logout' %}" class="btn btn-default btn-flat">退出登录</a>
                                 </div>
                             </li>
                         </ul>
@@ -94,7 +94,7 @@
 {#                    {% if perms.news.change_news %}#}
                     <li class="header">新闻管理</li>
                     <li>
-                        <a href="{% url 'cms:news_list' %}">
+                        <a href="#">
                             <i class="fa fa-list"></i>
                             <span>新闻列表</span>
                         </a>
@@ -149,7 +149,7 @@
         </section>
     </div>
     <footer class="main-footer">
-        <strong>python1903</strong>后台管理系统
+        <strong>python1904</strong>后台管理系统
     </footer>
 </div>
 </body>
