@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'apps.qfauth',
     'apps.cms',
     'apps.news',
+    'apps.ueditor',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

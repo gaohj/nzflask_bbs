@@ -9,7 +9,7 @@
     {# 这个区域用来显示  ajax异步返回的 json信息   为了 防止 变量标签跟django模板引擎冲突 我们使用{% verbatim %} {% endverbatim %} 给它包裹起来#}
     <script id="news-item" type="text/html">
         {% verbatim %}
-        {{each newses news index}}
+        {{each newes news index}}
         <li>
             <div class="thumbnail-group">
                 <a href="/news/{{ news.id }}">
@@ -25,12 +25,12 @@
                 </p>
                 <p class="more">
                     <span class="category">{{ news.category.name }}</span>
-                    <span class="pub-time">{{ news.pub_time}}</span>
-                    <span class="author">{{{{ news.author.username }}</span>
+                    <span class="pub-time">{{ news.pub_time | TimeKangbazi}}</span>
+                    <span class="author">{{ news.author.username }}</span>
                 </p>
             </div>
         </li>
-        {{ /each }}
+        {{/each}}
         {% endverbatim %}
     </script>
 {% endblock %}
@@ -68,20 +68,20 @@
                         {% for news in newses %}
                             <li>
                                 <div class="thumbnail-group">
-                                    <a href="#">
+                                    <a href="{% url 'news:news_detail' news_id=news.pk %}">
                                         <img src="{{ news.thumbnail }}" alt="">
                                     </a>
                                 </div>
                                 <div class="news-group">
                                     <p class="title">
-                                        <a href="#">{{ news.title }}</a>
+                                        <a href="{% url 'news:news_detail' news_id=news.pk %}">{{ news.title }}</a>
                                     </p>
                                     <p class="desc">
                                         {{ news.desc }}
                                     </p>
                                     <p class="more">
                                         <span class="category">{{ news.category.name }}</span>
-                                        <span class="pub-time">{{ news.pub_time | time_since}}</span>
+                                        <span class="pub-time">{{ news.pub_time | time_since }} </span>
                                         <span class="author">{{ news.author.username }}</span>
                                     </p>
                                 </div>
