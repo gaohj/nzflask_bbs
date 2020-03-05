@@ -55,7 +55,8 @@
                         <div class="form-group">
                             <label for="desc-form">描述</label>
                             {% if news %}
-                                <input type="text" class="form-control" id="desc-form" name="desc" value="{{ news.desc }}">                                               {% else %}
+                                <input type="text" class="form-control" id="desc-form" name="desc" value="{{ news.desc }}">
+                            {% else %}
                                 <input type="text" class="form-control" id="desc-form" name="desc">
                             {% endif %}
                         </div>

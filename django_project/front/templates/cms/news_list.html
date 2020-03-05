@@ -88,12 +88,12 @@
                 <tbody>
                     {% for news in newses %}
                         <tr>
-                            <td><a target="_blank" href="{% url 'news:news_detail' news_id=news.pk %}">{{ news.title }}</a></td>
+                            <td><a target="_blank" href="#">{{ news.title }}</a></td>
                             <td>{{ news.category.name }}</td>
                             <td>{{ news.pub_time }}</td>
                             <td>{{ news.author.username }}</td>
                             <td>
-                                <a href="#" class="btn btn-info btn-xs">编辑</a>
+                                <a href="{% url 'cms:edit_news' %}?news_id={{ news.pk }}" class="btn btn-info btn-xs">编辑</a>
                                 <button class="btn btn-danger btn-xs delete-btn" data-news-id="{{ news.pk }}">删除</button>
                             </td>
                         </tr>
@@ -102,7 +102,7 @@
             </table>
         </div>
         <div class="box-footer">
-            <p class="pull-left">第{{ current_page }}/总共{{ num_pages }}页</p>
+            <p class="pull-left">第{{ current_number }}页/总共{{ num_pages }}页</p>
             <ul class="pagination pull-right">
                 {#上一页#}
                 {% if page_obj.has_previous %}
@@ -123,7 +123,7 @@
                 {% endfor %}
 
                 {# 当前的页面 #}
-                <li class="active"><a href="?p={{ current_page }}{{ url_query }}">{{ current_page }}</a></li>
+                <li class="active"><a href="?p={{ current_number }}{{ url_query }}">{{ current_number }}</a></li>
 
                 {# 右边的页码 #}
                 {% for right_page in right_pages %}

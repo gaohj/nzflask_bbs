@@ -5,8 +5,10 @@ app_name = 'cms'
 
 urlpatterns = [
     path('',views.index,name='index'),
+    path('news_list/',views.NewsListView.as_view(),name='news_list'),
     path('add_news_category/',views.add_news_category,name='add_news_category'),
     path('news_category/',views.news_category,name='news_category'),
     path('write_news/',views.WriteNewsView.as_view(),name='write_news'),
+    path('edit_news/',views.editNewsView.as_view(),name='edit_news'),
     path('qntoken/',views.qiniu_token,name='qntoken')
 ]
