@@ -4,7 +4,7 @@ from django.views.generic import View
 from apps.news.models import NewsCategory,News,Comment
 from utils import restful_res
 from django.views.decorators.http import require_POST,require_GET
-from .forms import WriteNewsForm
+from .forms import WriteNewsForm,EditNewsForm
 from django.core.paginator import Paginator
 from datetime import datetime
 from django.utils.timezone import make_aware
@@ -155,7 +155,20 @@ class editNewsView(View):
         #如果修改  那么提交到后台
         return render(request,'cms/write_news.html',context=context)
     def post(self,request):
-        pass
+        form = EditNewsForm(request.POST)
+        if form.is_valid():
+            title = form.cleaned_data.get('title')
+            desc = form.cleaned_data.get('desc')
+            content = form.cleaned_data.get('content')
+            thumbnail = form.cleaned_data.get('thumbnail')
+            pk = form.cleaned_data.get('pk')
+            category_id = form.cleaned_data.get('category')
+            category = NewsCategory.objects.get(pk=category_id)
+            News.objects.filter(pk=pk).update(title=title, desc=desc, content=content, thumbnail=thumbnail, author=request.user,
+                                category=category)
+            return restful_res.success()
+        else:
+            return restful_res.params_error(message=form.get_errors())
 
 
 

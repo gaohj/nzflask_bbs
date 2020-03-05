@@ -1,5 +1,5 @@
 {% extends 'base/front_base.html' %}
-{#{% load my_filter %}#}
+{% load tmp_filter %}
 {% block title %}首页{% endblock %}
 
 {% block head %}
@@ -65,23 +65,23 @@
                         {% endfor %}
                     </ul>
                     <ul class="list-inner-group">
-                        {% for news in newes %}
+                        {% for news in newses %}
                             <li>
                                 <div class="thumbnail-group">
-                                    <a href="{% url 'news:news_detail' news_id=news.pk %}">
+                                    <a href="#">
                                         <img src="{{ news.thumbnail }}" alt="">
                                     </a>
                                 </div>
                                 <div class="news-group">
                                     <p class="title">
-                                        <a href="{% url 'news:news_detail' news_id=news.pk %}">{{ news.title }}</a>
+                                        <a href="#">{{ news.title }}</a>
                                     </p>
                                     <p class="desc">
                                         {{ news.desc }}
                                     </p>
                                     <p class="more">
                                         <span class="category">{{ news.category.name }}</span>
-                                        <span class="pub-time">{{ news.pub_time}}</span>
+                                        <span class="pub-time">{{ news.pub_time | time_since}}</span>
                                         <span class="author">{{ news.author.username }}</span>
                                     </p>
                                 </div>

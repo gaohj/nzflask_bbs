@@ -1,5 +1,5 @@
 {% extends 'cms/base.html' %}
-{#{% load my_filter %}#}
+{% load tmp_filter %}
 
 {% block title %}
     新闻列表
@@ -90,7 +90,7 @@
                         <tr>
                             <td><a target="_blank" href="#">{{ news.title }}</a></td>
                             <td>{{ news.category.name }}</td>
-                            <td>{{ news.pub_time }}</td>
+                            <td>{{ news.pub_time|time_format }}</td>
                             <td>{{ news.author.username }}</td>
                             <td>
                                 <a href="{% url 'cms:edit_news' %}?news_id={{ news.pk }}" class="btn btn-info btn-xs">编辑</a>

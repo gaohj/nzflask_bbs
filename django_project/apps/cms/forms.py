@@ -6,3 +6,10 @@ class WriteNewsForm(forms.ModelForm,FormMixin):
     class Meta:
         model = News
         exclude = ['category','author','pub_time']
+
+class EditNewsForm(forms.ModelForm,FormMixin):
+    category = forms.IntegerField()
+    pk = forms.IntegerField()
+    class Meta:
+        model = News
+        exclude = ['category','author','pub_time']

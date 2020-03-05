@@ -164,4 +164,6 @@ UEDITOR_UPLOAD_TO_QINIU = False
 UEDITOR_UPLOAD_TO_SERVER = True
 UEDITOR_CONFIG_PATH = os.path.join(BASE_DIR,'front','dist','ueditor','config.json')
 
+#一次加载多少篇文章
+ONE_PAGE_NEWS_COUNT = 3
 
