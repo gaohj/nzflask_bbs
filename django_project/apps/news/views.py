@@ -1,11 +1,13 @@
 from django.shortcuts import render
-from .models import NewsCategory,News
+from .models import NewsCategory,News,Comment
 from django.views.decorators.http import require_GET
 from django.conf import settings
-from .serializers import NewsSerializers
+from .serializers import NewsSerializers,CommentSerializers
 from utils import restful_res
 from django.conf import settings
 from django.http import Http404
+from apps.qfauth.decorators import qf_login_required
+from .forms import PublicCommentForm
 @require_GET
 def index(request):
     count = settings.ONE_PAGE_NEWS_COUNT
@@ -36,10 +38,27 @@ def news_list(request):
 
 def news_detail(request,news_id):
     try:
-        news = News.objects.select_related('category','author').get(pk=news_id)
+        # news = News.objects.select_related('category','author').get(pk=news_id)
+        news = News.objects.select_related('category','author').prefetch_related("comments__author").get(pk=news_id)
+        # comments = news.comments.all()
+        # print(comments)
         context = {
             'news':news
         }
         return render(request,'news/news_detail.html',context=context)
     except News.DoesNotExist:
         raise Http404
+
+
+@qf_login_required
+def pub_comment(request):
+    form = PublicCommentForm(request.POST)
+    if form.is_valid():
+        news_id = form.cleaned_data.get('news_id')
+        content = form.cleaned_data.get('content')
+        news = News.objects.get(pk=news_id)
+        comment = Comment.objects.create(content=content,news=news,author=request.user)
+        serializer = CommentSerializers(comment)
+        return restful_res.result(data=serializer.data)
+    else:
+        return restful_res.params_error(message=form.get_errors())

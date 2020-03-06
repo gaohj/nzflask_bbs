@@ -9,10 +9,12 @@ from django.core.paginator import Paginator
 from datetime import datetime
 from django.utils.timezone import make_aware
 from urllib import parse  #拼接成 url地址
+from apps.qfauth.decorators import qf_login_required
 #{'start':'','end':''}
 #http://127.0.0.1:8003/cms/news_list/?start=&end=&title=%E6%9D%9C%E5%BA%B7&category=0
 
 @require_GET
+@qf_login_required
 def index(request):
     return render(request,'cms/index.html')
 
