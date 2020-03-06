@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'haystack',
     'apps.qfauth',
     'apps.cms',
     'apps.news',
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'apps.ueditor',
     'rest_framework',
     'debug_toolbar',
+
 ]
 
 MIDDLEWARE = [
@@ -189,4 +191,15 @@ DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.redirects.RedirectsPanel',
     'debug_toolbar.panels.profiling.ProfilingPanel',
 ]
+
+HAYSTACK_CONNECTIONS = {
+    'default':{
+        'ENGINE':'haystack.backends.whoosh_backend.WhooshEngine',
+        #设置索引文件的位置
+        'PATH':os.path.join(BASE_DIR,'whoosh_index')
+    }
+}
+
+#数据增删改查以后 自动创建索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 

@@ -8,6 +8,7 @@ from django.conf import settings
 from django.http import Http404
 from apps.qfauth.decorators import qf_login_required
 from .forms import PublicCommentForm
+from django.db.models import Q
 @require_GET
 def index(request):
     count = settings.ONE_PAGE_NEWS_COUNT
@@ -67,3 +68,14 @@ def pub_comment(request):
         return restful_res.result(data=serializer.data)
     else:
         return restful_res.params_error(message=form.get_errors())
+
+def search(request):
+    q = request.GET.get('q')
+    print(q)
+    context = {}
+    if q:
+        newses = News.objects.filter(Q(title__icontains=q) | Q(content__icontains=q)).all()
+        context = {
+            'newses':newses
+        }
+    return render(request,'search/search1.html',context=context)

@@ -16,7 +16,10 @@ Including another URLconf
 
 from django.urls import path,include
 from django.conf import settings
+from apps.news import views
 urlpatterns = [
+    path('search/',include('haystack.urls')),
+    # path('search/', views.search,name='search'),
     path('account/', include('apps.qfauth.urls')), #认证地址
     path('cms/', include('apps.cms.urls')), #管理后台
     path('news/', include('apps.news.urls')), #前台
