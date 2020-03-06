@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apps.qfauth',
     'apps.cms',
     'apps.news',
+    'apps.course',
     'apps.ueditor',
     'rest_framework',
     'debug_toolbar',

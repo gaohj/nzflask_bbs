@@ -91,7 +91,7 @@
                         <span>首页</span>
                     </a>
                 </li>
-{#                    {% if perms.news.change_news %}#}
+                    {% if perms.news.change_news %}
                     <li class="header">新闻管理</li>
                     <li>
                         <a href="{% url 'cms:news_list' %}">
@@ -99,26 +99,32 @@
                             <span>新闻列表</span>
                         </a>
                     </li>
+                    {% endif %}
+                    {% if perms.news.add_news %}
                     <li>
                         <a href="{% url 'cms:write_news' %}">
                             <i class="fa fa-edit"></i>
                             <span>发布新闻</span>
                         </a>
                     </li>
+                    {% endif %}
+                    {% if perms.news.add_newscategory %}
                     <li>
                         <a href="{% url 'cms:news_category' %}">
                             <i class="fa fa-tag"></i>
                             <span>新闻分类</span>
                         </a>
                     </li>
+                    {% endif %}
+                    {% if perms.news.add_banner %}
                     <li>
                         <a href="#">
                             <i class="fa fa-window-restore"></i>
                             <span>轮播图</span>
                         </a>
                     </li>
-{#                    {% endif %}#}
-{#                    {% if perms.course.change_course %}#}
+                    {% endif %}
+                    {% if perms.course.change_course %}
                     <li class="header">课程管理</li>
                     <li>
                         <a href="#">
@@ -126,9 +132,9 @@
                             <span>发布课程</span>
                         </a>
                     </li>
-{#                    {% endif %}#}
+                    {% endif %}
 
-{#                    {% if user.is_superuser %}#}
+                    {% if user.is_superuser %}
                     <li class="header">员工管理</li>
                     <li>
                         <a href="#">
@@ -136,7 +142,7 @@
                             <span>员工管理</span>
                         </a>
                     </li>
-{#                    {% endif %}#}
+                    {% endif %}
             </ul>
         </section>
     </aside>

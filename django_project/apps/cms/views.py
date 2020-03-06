@@ -8,16 +8,20 @@ from .forms import WriteNewsForm,EditNewsForm
 from django.core.paginator import Paginator
 from datetime import datetime
 from django.utils.timezone import make_aware
+from django.contrib.admin.views.decorators import staff_member_required
 from urllib import parse  #拼接成 url地址
 from apps.qfauth.decorators import qf_login_required
+from django.utils.decorators import method_decorator
 #{'start':'','end':''}
 #http://127.0.0.1:8003/cms/news_list/?start=&end=&title=%E6%9D%9C%E5%BA%B7&category=0
-
+from django.contrib.auth.decorators import permission_required
 @require_GET
-@qf_login_required
+@staff_member_required(login_url='news:index')
 def index(request):
     return render(request,'cms/index.html')
 
+
+@method_decorator(permission_required(perm="news.change_news",login_url='/news'),name='dispatch')
 class NewsListView(View):
     def get(self,request):
         #接收搜索条件内容
@@ -100,6 +104,7 @@ class NewsListView(View):
         }
 #分类页面
 @require_GET
+@permission_required(perm="news.add_newscategory",login_url='/news')
 def news_category(request):
     categories = NewsCategory.objects.all()
     context = {
@@ -108,6 +113,7 @@ def news_category(request):
     return render(request,'cms/news_category.html',context=context)
 #添加文章分类
 @require_POST
+@permission_required(perm="news.add_newscategory",login_url='/news')
 def add_news_category(request):
     name = request.POST.get('name')
     exists = NewsCategory.objects.filter(name=name).exists()
@@ -118,7 +124,7 @@ def add_news_category(request):
         return restful_res.params_error(message='该分类已经存在')
 
 #发布资讯
-
+@method_decorator(permission_required(perm="news.add_news",login_url='/news'),name='dispatch')
 class WriteNewsView(View):
     def get(self,request):
         categories = NewsCategory.objects.all()
@@ -141,7 +147,7 @@ class WriteNewsView(View):
             return restful_res.params_error(message=form.get_errors())
 
 
-
+@method_decorator(permission_required(perm="news.change_news",login_url='/news'),name='dispatch')
 #编辑文章 传过来 你想编辑哪一页
 class editNewsView(View):
     def get(self,request):

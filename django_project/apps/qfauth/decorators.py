@@ -12,3 +12,4 @@ def qf_login_required(func):
                 return redirect(reverse('news:index'))
 
     return wrapper
+
