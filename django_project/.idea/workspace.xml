@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6786bdc2-e449-4356-b048-0ac673ccaccc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/apps/cms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/cms/staff_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/qfauth/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/qfauth/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/qfauth/management/commands/init_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/qfauth/management/commands/init_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/dist/css/news/index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/news/index.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/dist/js/front_base.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/front_base.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/base/front_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/base/front_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/templates/cms/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/cms/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,41 +49,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="416" />
-          <entry key="js" value="7590" />
-          <entry key="py" value="12747" />
+          <entry key="html" value="472" />
+          <entry key="js" value="7864" />
+          <entry key="py" value="13768" />
           <entry key="实战备注" value="371" />
           <entry key="项目配置文件" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="415" />
-          <entry key="JavaScript" value="7590" />
+          <entry key="HTML" value="471" />
+          <entry key="JavaScript" value="7864" />
           <entry key="PLAIN_TEXT" value="448" />
-          <entry key="Python" value="12747" />
+          <entry key="Python" value="13768" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="html" value="39" />
+          <entry key="css" value="3" />
+          <entry key="html" value="43" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="38" />
+          <entry key="js" value="39" />
           <entry key="json" value="1" />
-          <entry key="py" value="136" />
+          <entry key="py" value="141" />
           <entry key="实战备注" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="39" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="43" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="38" />
+          <entry key="JavaScript" value="39" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="136" />
+          <entry key="Python" value="141" />
         </counts>
       </usages-collector>
     </session>
@@ -92,33 +94,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/qfauth/management/commands/init_group.py">
+        <entry file="file://$PROJECT_DIR$/apps/cms/models.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/cms/staff_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+            <state relative-caret-position="168">
+              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
-                <marker date="1583478398319" expanded="true" signature="315:320" ph="..." />
+                <marker date="1583483767341" expanded="true" signature="400:405" ph="..." />
+                <marker date="1583483767341" expanded="true" signature="639:1525" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/cms/views.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/qfauth/decorators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="437">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1583479539611" expanded="true" signature="1092:3933" ph="..." />
-                <marker date="1583479539611" expanded="true" signature="4048:4215" ph="..." />
-                <marker date="1583479539611" expanded="true" signature="4337:4608" ph="..." />
-                <marker date="1583479539611" expanded="true" signature="4735:4946" ph="..." />
-                <marker date="1583479539611" expanded="true" signature="5781:6943" ph="..." />
-                <marker date="1583479539611" expanded="true" signature="5808:5817" ph="..." />
-                <marker date="1583479539611" expanded="true" signature="7014:7015" ph="..." />
-                <marker date="1583479539611" expanded="true" signature="7014:7019" ph="..." />
+                <element signature="e#1#30#0" expanded="true" />
+                <marker date="1583483685720" expanded="true" signature="137:142" ph="..." />
+                <marker date="1583483685720" expanded="true" signature="178:453" ph="..." />
+                <marker date="1583483685720" expanded="true" signature="502:674" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/templates/cms/add_staff.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="28" column="71" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/cms/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,44 +150,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/templates/cms/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="136" column="30" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="30" />
+            <state relative-caret-position="353">
+              <caret line="139" column="51" selection-start-line="139" selection-start-column="51" selection-end-line="139" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/qfauth/decorators.py">
+        <entry file="file://$PROJECT_DIR$/front/templates/cms/staffs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#1#30#0" expanded="true" />
-                <marker date="1583479484912" expanded="true" signature="105:110" ph="..." />
-                <marker date="1583479484912" expanded="true" signature="146:421" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/jiangxiligong/django_project/Lib/site-packages/django/contrib/admin/views/decorators.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/news/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-              <folding>
-                <marker date="1583477438409" expanded="true" signature="62:108" ph="..." />
-                <marker date="1583477438409" expanded="true" signature="944:1163" ph="..." />
-              </folding>
+            <state relative-caret-position="588">
+              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -208,7 +204,6 @@
         <option value="$PROJECT_DIR$/utils/captcha/qfcaptcha.py" />
         <option value="$PROJECT_DIR$/apps/qfauth/__init__.py" />
         <option value="$PROJECT_DIR$/utils/aliyun_sms.py" />
-        <option value="$PROJECT_DIR$/front/templates/base/front_base.html" />
         <option value="$PROJECT_DIR$/apps/qfauth/views.py" />
         <option value="$PROJECT_DIR$/apps/qfauth/forms.py" />
         <option value="$PROJECT_DIR$/apps/qfauth/urls.py" />
@@ -218,7 +213,6 @@
         <option value="$PROJECT_DIR$/apps/ueditor/views.py" />
         <option value="$PROJECT_DIR$/apps/ueditor/urls.py" />
         <option value="$PROJECT_DIR$/front/dist/js/news_list.min.js" />
-        <option value="$PROJECT_DIR$/apps/cms/urls.py" />
         <option value="$PROJECT_DIR$/apps/cms/forms.py" />
         <option value="$PROJECT_DIR$/front/dist/js/write_news.min.js" />
         <option value="$PROJECT_DIR$/front/templates/cms/write_news.html" />
@@ -227,7 +221,6 @@
         <option value="$PROJECT_DIR$/apps/news/templatetags/tmp_filter.py" />
         <option value="$PROJECT_DIR$/front/templates/news/index.html" />
         <option value="$PROJECT_DIR$/front/dist/js/index.min.js" />
-        <option value="$PROJECT_DIR$/front/dist/js/front_base.min.js" />
         <option value="$PROJECT_DIR$/apps/news/forms.py" />
         <option value="$PROJECT_DIR$/apps/news/serializers.py" />
         <option value="$PROJECT_DIR$/apps/news/urls.py" />
@@ -239,9 +232,14 @@
         <option value="$PROJECT_DIR$/apps/course/models.py" />
         <option value="$PROJECT_DIR$/apps/news/models.py" />
         <option value="$PROJECT_DIR$/apps/qfauth/management/commands/init_group.py" />
-        <option value="$PROJECT_DIR$/front/templates/cms/base.html" />
-        <option value="$PROJECT_DIR$/apps/qfauth/decorators.py" />
         <option value="$PROJECT_DIR$/apps/cms/views.py" />
+        <option value="$PROJECT_DIR$/front/dist/js/front_base.min.js" />
+        <option value="$PROJECT_DIR$/front/templates/base/front_base.html" />
+        <option value="$PROJECT_DIR$/front/templates/cms/base.html" />
+        <option value="$PROJECT_DIR$/apps/cms/urls.py" />
+        <option value="$PROJECT_DIR$/front/templates/cms/staffs.html" />
+        <option value="$PROJECT_DIR$/apps/qfauth/decorators.py" />
+        <option value="$PROJECT_DIR$/apps/cms/staff_views.py" />
       </list>
     </option>
   </component>
@@ -336,11 +334,11 @@
       <recent name="C:\www\wh1904\nz_bbs\django_project\apps" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\www\wh1904\nz_bbs\django_project\front\dist\css\news" />
       <recent name="C:\www\wh1904\nz_bbs\django_project\apps\qfauth" />
       <recent name="C:\www\wh1904\nz_bbs\django_project\front\dist" />
       <recent name="C:\www\wh1904\nz_bbs\django_project\utils" />
       <recent name="C:\www\wh1904\nz_bbs\django_project\front\dist\css" />
-      <recent name="C:\www\wh1904\nz_bbs\django_project\front\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -407,7 +405,7 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987013" visible="true" weight="0.23137535" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987013" visible="true" weight="0.23137535" />
       <window_info id="Structure" order="1" sideWeight="0.5012987" side_tool="true" weight="0.09097421" />
       <window_info id="Favorites" order="2" sideWeight="0.5012987" side_tool="true" weight="0.09097421" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -416,7 +414,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32749325" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32614556" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
@@ -438,42 +436,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django_project/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/qfauth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/jiangxiligong/django_project/Lib/site-packages/aliyunsdkcore/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="453" column="8" selection-start-line="453" selection-start-column="8" selection-end-line="453" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/qfauth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <marker date="1583206437838" expanded="true" signature="231:1218" ph="..." />
-            <marker date="1583206437838" expanded="true" signature="1316:1321" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/jiangxiligong/django_project/Lib/site-packages/django/contrib/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="194" column="44" selection-start-line="194" selection-start-column="44" selection-end-line="194" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/qfauth/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -590,16 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/cms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/dist/js/news_list.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -677,13 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/base/front_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/dist/js/index.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
@@ -758,26 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/dist/js/front_base.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="210" column="46" selection-start-line="210" selection-start-column="34" selection-end-line="210" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!block;n#Auth#0" />
-            <element signature="e#289#775#0" />
-            <element signature="e#824#876#0" />
-            <element signature="e#915#967#0" />
-            <element signature="e#1027#1497#0" />
-            <element signature="e#1553#1933#0" />
-            <element signature="e#1989#2900#0" />
-            <element signature="e#2963#3130#0" />
-            <element signature="e#3195#3926#0" />
-            <element signature="e#3986#5461#0" />
-            <element signature="e#5512#5728#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/templates/news/news_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -829,7 +754,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/news/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="353">
           <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding>
             <marker date="1583477438409" expanded="true" signature="62:108" ph="..." />
@@ -863,18 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/qfauth/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#1#30#0" expanded="true" />
-            <marker date="1583479484912" expanded="true" signature="105:110" ph="..." />
-            <marker date="1583479484912" expanded="true" signature="146:421" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/jiangxiligong/django_project/Lib/site-packages/django/contrib/admin/views/decorators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -882,27 +795,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/cms/base.html">
+    <entry file="file://$PROJECT_DIR$/front/dist/css/news/index.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/base/front_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="136" column="30" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="30" />
+        <state relative-caret-position="210">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front/dist/js/front_base.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="246" column="18" selection-start-line="246" selection-start-column="8" selection-end-line="246" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!block;n#Auth#0" />
+            <element signature="e#289#775#0" />
+            <element signature="e#824#876#0" />
+            <element signature="e#915#967#0" />
+            <element signature="e#1027#1497#0" />
+            <element signature="e#1553#1933#0" />
+            <element signature="e#1989#2900#0" />
+            <element signature="e#2963#3130#0" />
+            <element signature="e#3195#3926#0" />
+            <element signature="e#3986#5461#0" />
+            <element signature="e#5512#5728#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/cms/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/cms/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="-2797">
           <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#1097#3932#0" />
+            <element signature="e#4053#4214#0" />
+            <element signature="e#4342#4606#0" />
             <marker date="1583479539611" expanded="true" signature="1092:3933" ph="..." />
             <marker date="1583479539611" expanded="true" signature="4048:4215" ph="..." />
             <marker date="1583479539611" expanded="true" signature="4337:4608" ph="..." />
-            <marker date="1583479539611" expanded="true" signature="4735:4946" ph="..." />
+            <marker date="1583479539611" expanded="false" signature="4735:4946" ph="..." />
             <marker date="1583479539611" expanded="true" signature="5781:6943" ph="..." />
             <marker date="1583479539611" expanded="true" signature="5808:5817" ph="..." />
             <marker date="1583479539611" expanded="true" signature="7014:7015" ph="..." />
             <marker date="1583479539611" expanded="true" signature="7014:7019" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/cms/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="139" column="51" selection-start-line="139" selection-start-column="51" selection-end-line="139" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/cms/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/cms/staffs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/cms/add_staff.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="28" column="71" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/qfauth/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="e#1#30#0" expanded="true" />
+            <marker date="1583483685720" expanded="true" signature="137:142" ph="..." />
+            <marker date="1583483685720" expanded="true" signature="178:453" ph="..." />
+            <marker date="1583483685720" expanded="true" signature="502:674" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/cms/staff_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding>
+            <marker date="1583483767341" expanded="true" signature="400:405" ph="..." />
+            <marker date="1583483767341" expanded="true" signature="639:1525" ph="..." />
           </folding>
         </state>
       </provider>
