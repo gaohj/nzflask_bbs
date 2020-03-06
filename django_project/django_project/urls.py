@@ -15,10 +15,14 @@ Including another URLconf
 """
 
 from django.urls import path,include
-
+from django.conf import settings
 urlpatterns = [
     path('account/', include('apps.qfauth.urls')), #认证地址
     path('cms/', include('apps.cms.urls')), #管理后台
     path('news/', include('apps.news.urls')), #前台
     path('ueditor/', include('apps.ueditor.urls')), #ueditor
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns.append( path('__debug__/', include(debug_toolbar.urls))),

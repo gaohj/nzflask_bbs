@@ -11,6 +11,7 @@ from .forms import PublicCommentForm
 @require_GET
 def index(request):
     count = settings.ONE_PAGE_NEWS_COUNT
+    #newses = News.objects.all()[0:count]
     newses = News.objects.select_related('author','category').all()[0:count]
     categories = NewsCategory.objects.all()
     context = {
@@ -29,9 +30,12 @@ def news_list(request):
     start = (page-1)* settings.ONE_PAGE_NEWS_COUNT
     end = start+ settings.ONE_PAGE_NEWS_COUNT
     if category_id == 0 :
-        newses = News.objects.select_related('category','author').all()[start:end]
+        newses = News.objects.all()[start:end]
+        # newses = News.objects.select_related('category','author').all()[start:end]
     else:
-        newses = News.objects.select_related('category', 'author').filter(category__id=category_id)[start:end]
+        newses = News.objects.filter(category__id=category_id)[start:end]
+        #newses = News.objects.select_related('category', 'author').filter(category__id=category_id)[start:end]
+        #newses = News.objects.select_related('category', 'author').filter(category__id=category_id)[start:end]
     serializer = NewsSerializers(newses,many=True)
     data = serializer.data
     return restful_res.result(data=data)
@@ -39,6 +43,7 @@ def news_list(request):
 def news_detail(request,news_id):
     try:
         # news = News.objects.select_related('category','author').get(pk=news_id)
+        # news = News.objects.get(pk=news_id)
         news = News.objects.select_related('category','author').prefetch_related("comments__author").get(pk=news_id)
         # comments = news.comments.all()
         # print(comments)
