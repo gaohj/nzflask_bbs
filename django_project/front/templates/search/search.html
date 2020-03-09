@@ -23,6 +23,9 @@
                     <p class="recommend-title">热门推荐</p>
                     <ul class="recommend-list">
                         {% for result in page.object_list %}
+{#                        page.object_list就是查找出来的数据    #}
+{#                            haystack 默认传入 page paginator query等参数  page paginator是django自带的类 query是查询的关键词  #}
+
                             {% with result.object as news %}
                                 <li>
                                     <div class="thumbnail-group">

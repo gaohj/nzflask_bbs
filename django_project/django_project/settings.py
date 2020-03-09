@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'haystack',
     'apps.qfauth',
     'apps.cms',
@@ -192,9 +193,18 @@ DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.profiling.ProfilingPanel',
 ]
 
+
+# 百度云的配置
+# 控制台->用户中心->用户ID
+BAIDU_CLOUD_USER_ID = '5f8ea981867a4be9992afc6f7a29166e'
+# 点播VOD->全局设置->发布设置->安全设置->UserKey
+BAIDU_CLOUD_USER_KEY = 'c228d166497b400d'
+
+# from apps.news.whoosh_cn_backend import WhooshEngine
 HAYSTACK_CONNECTIONS = {
     'default':{
-        'ENGINE':'haystack.backends.whoosh_backend.WhooshEngine',
+        # 'ENGINE':'haystack.backends.whoosh_backend.WhooshEngine',
+        'ENGINE':'apps.news.whoosh_cn_backend.WhooshEngine',
         #设置索引文件的位置
         'PATH':os.path.join(BASE_DIR,'whoosh_index')
     }
