@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'haystack',
+    # 'haystack',
     'apps.qfauth',
     'apps.cms',
     'apps.news',
@@ -144,6 +144,8 @@ STATICFILES_DIRS = [
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
 #缓存配置
 CACHES = {
     'default':{
@@ -201,15 +203,15 @@ BAIDU_CLOUD_USER_ID = '5f8ea981867a4be9992afc6f7a29166e'
 BAIDU_CLOUD_USER_KEY = 'c228d166497b400d'
 
 # from apps.news.whoosh_cn_backend import WhooshEngine
-HAYSTACK_CONNECTIONS = {
-    'default':{
-        # 'ENGINE':'haystack.backends.whoosh_backend.WhooshEngine',
-        'ENGINE':'apps.news.whoosh_cn_backend.WhooshEngine',
-        #设置索引文件的位置
-        'PATH':os.path.join(BASE_DIR,'whoosh_index')
-    }
-}
-
-#数据增删改查以后 自动创建索引
-HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
-
+# HAYSTACK_CONNECTIONS = {
+#     'default':{
+#         # 'ENGINE':'haystack.backends.whoosh_backend.WhooshEngine',
+#         'ENGINE':'apps.news.whoosh_cn_backend.WhooshEngine',
+#         #设置索引文件的位置
+#         'PATH':os.path.join(BASE_DIR,'whoosh_index')
+#     }
+# }
+#
+# #数据增删改查以后 自动创建索引
+# HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+#
