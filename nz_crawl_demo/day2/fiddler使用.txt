@@ -1,4 +1,4 @@
-打开软件：
+﻿打开软件：
 1、配置软件，配置fiddler能够抓取https的包
 	Tools==>Options==>HTTPS
 	选中 Capture Https Connects 
@@ -34,4 +34,4 @@
 	select html
 	select image
 	cls 清楚所有请求
-	?main  搜索
+	?关键词  搜索
