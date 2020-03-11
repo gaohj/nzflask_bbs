@@ -23,8 +23,53 @@ def parse_detail_info(url):
         movie['shoot'] = shoot
     except:
         pass
-
-
+    infos = Zoom.xpath(".//text()")
+    def parse_info(info,rule):
+        return info.replace(rule,"").strip()
+    for index,info in enumerate(infos):
+        # print(info)
+        # print(index)
+        # print("="*30)
+        if info.startswith("◎年　　代"):
+            info = parse_info(info,"◎年　　代")
+            movie['year'] = info
+        elif info.startswith("◎产　　地"):
+            info = parse_info(info,"◎产　　地")
+            movie['country'] = info
+        elif info.startswith("◎类　　别"):
+            info = parse_info(info,"◎类　　别")
+            movie['category'] = info
+        elif info.startswith("◎豆瓣评分"):
+            info = parse_info(info,"◎豆瓣评分")
+            movie['rating'] = info
+        elif info.startswith("◎片　　长"):
+            info = parse_info(info,"◎片　　长")
+            movie['duration'] = info
+        elif info.startswith("◎导　　演"):
+            info = parse_info(info,"◎导　　演")
+            movie['director'] = info
+        elif info.startswith("◎主　　演"):
+            info = parse_info(info,"◎主　　演")
+            actors = [info] #把以◎主　　演开头的一行先放到列表中
+            for x in range(index+1,len(infos)):
+                actor = infos[x].strip()
+                if actor.startswith("◎"):
+                    break
+                actors.append(actor)
+            # print(actors)
+            movie['actors'] = actors
+        elif info.startswith("◎简　　介"):
+            info = parse_info(info,"◎简　　介")
+            profiles= []
+            for x in range(index+1,len(infos)):
+                profile = infos[x].strip()
+                if profile.startswith("◎"):
+                    break
+                profiles.append(profile)
+            movie['profile'] = profiles
+            # print(profiles)
+    download_url = html.xpath("//td[@bgcolor='#fdfddf']/a/text()")[0]
+    movie['download_url'] = download_url
     return movie
 
 #获取每个电影的详情链接
@@ -54,7 +99,8 @@ def spider():
         for detail_url in detail_urls:
             movie = parse_detail_info(detail_url)
             movies.append(movie)
-    print(movies)
+            print(movie)
+    # print(movies)
 
 
 if __name__ == "__main__":

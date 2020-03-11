@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15daa6aa-b00e-4e26-b5e7-677079d7ee06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dytt8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XPath语法和lxml模块.md" beforeDir="false" afterPath="$PROJECT_DIR$/XPath语法和lxml模块.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dytt8.py" beforeDir="false" afterPath="$PROJECT_DIR$/dytt8.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +15,9 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/day3$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1583891468662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/day3$demo3.coverage" NAME="demo3 Coverage Results" MODIFIED="1583893486406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/day3$dytt8.coverage" NAME="dytt8 Coverage Results" MODIFIED="1583898883507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/day3$dytt8.coverage" NAME="dytt8 Coverage Results" MODIFIED="1583911021591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/day3$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1583891713886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/day3$demo4.coverage" NAME="demo4 Coverage Results" MODIFIED="1583909304114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-298921639">
@@ -28,24 +29,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2239" />
+          <entry key="py" value="2992" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2239" />
+          <entry key="Python" value="2992" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="4" />
-          <entry key="py" value="5" />
+          <entry key="md" value="1" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="4" />
-          <entry key="Python" value="5" />
+          <entry key="Markdown" value="1" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -55,15 +58,37 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dytt8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="42">
+              <caret line="34" column="30" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="30" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1583898973721" expanded="true" signature="321:804" ph="..." />
-                <marker date="1583898973721" expanded="true" signature="842:1373" ph="..." />
-                <marker date="1583898973721" expanded="true" signature="1400:1405" ph="..." />
-                <marker date="1583898973721" expanded="true" signature="1400:1743" ph="..." />
+                <marker date="1583911021575" expanded="true" signature="321:2616" ph="..." />
+                <marker date="1583911021575" expanded="true" signature="851:901" ph="..." />
+                <marker date="1583911021575" expanded="true" signature="2654:3185" ph="..." />
+                <marker date="1583911021575" expanded="true" signature="3212:3217" ph="..." />
+                <marker date="1583911021575" expanded="true" signature="3212:3582" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XPath语法和lxml模块.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="252">
+                <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -86,6 +111,7 @@
         <option value="$PROJECT_DIR$/demo1.py" />
         <option value="$PROJECT_DIR$/demo2.py" />
         <option value="$PROJECT_DIR$/demo3.py" />
+        <option value="$PROJECT_DIR$/demo4.py" />
         <option value="$PROJECT_DIR$/dytt8.py" />
       </list>
     </option>
@@ -206,6 +232,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="demo4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="day3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="dytt8" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="day3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -233,10 +281,12 @@
       <item itemvalue="Python.demo2" />
       <item itemvalue="Python.demo3" />
       <item itemvalue="Python.dytt8" />
+      <item itemvalue="Python.demo4" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.dytt8" />
+        <item itemvalue="Python.demo4" />
         <item itemvalue="Python.demo3" />
         <item itemvalue="Python.demo2" />
         <item itemvalue="Python.demo1" />
@@ -271,8 +321,8 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7021563" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.54986525" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6078167" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -336,16 +386,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/XPath语法和lxml模块.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="252">
+            <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/jiangxiligong/1904_crawl_python3/Lib/site-packages/requests/adapters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="515" selection-start-line="515" selection-end-line="515" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dytt8.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="42">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="30" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1583898973721" expanded="true" signature="321:804" ph="..." />
-            <marker date="1583898973721" expanded="true" signature="842:1373" ph="..." />
-            <marker date="1583898973721" expanded="true" signature="1400:1405" ph="..." />
-            <marker date="1583898973721" expanded="true" signature="1400:1743" ph="..." />
+            <marker date="1583911021575" expanded="true" signature="321:2616" ph="..." />
+            <marker date="1583911021575" expanded="true" signature="851:901" ph="..." />
+            <marker date="1583911021575" expanded="true" signature="2654:3185" ph="..." />
+            <marker date="1583911021575" expanded="true" signature="3212:3217" ph="..." />
+            <marker date="1583911021575" expanded="true" signature="3212:3582" ph="..." />
           </folding>
         </state>
       </provider>
