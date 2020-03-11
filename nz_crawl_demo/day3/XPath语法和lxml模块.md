@@ -31,7 +31,7 @@ XPath 使用路径表达式来选取 XML 文档中的节点或者节点集。这
 | 路径表达式                   | 描述                                  |
 | ---------------------------- | ------------------------------------- |
 | /bookstore/book[1]           | 选取bookstore下的第一个子元素         |
-| /bookstore/book[last()]      | 选取bookstore下的倒数第二个book元素。 |
+| /bookstore/book[last()]      | 选取bookstore下的最后一个个book元素。 |
 | bookstore/book[position()<3] | 选取bookstore下前面两个子元素。       |
 | //book[@price]               | 选取拥有price属性的book元素           |
 | //book[@price=10]            | 选取所有属性price等于10的book元素     |
@@ -57,7 +57,7 @@ XPath 使用路径表达式来选取 XML 文档中的节点或者节点集。这
 
 ### 运算符：
 
-![img](../assets/QQ图片20171124194846.png)
+> 跟平时运算符一样 
 
 ## lxml库
 
