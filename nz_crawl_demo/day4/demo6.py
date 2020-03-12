@@ -1,3 +1,5 @@
+#共享全局变量 线程是无序的  容易造成 数据的错误
+#为了避免 上锁
 import threading
 
 VALUE = 0

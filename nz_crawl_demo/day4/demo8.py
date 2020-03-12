@@ -2,7 +2,7 @@ import threading
 import random
 import time
 gMoney = 10000
-gLock = threading.Lock()
+gCondition = threading.Condition()
 
 #生产者 消费者是多线程的一种模式
 
@@ -14,34 +14,38 @@ class Producer(threading.Thread):
     def run(self):
         global gMoney
         global gTime
+        global gCondition
         while True:
             money= random.randint(1000,10000)
-            gLock.acquire() #上锁
+            gCondition.acquire() #上锁
             if gTime >= gTotalTimes:
-                gLock.release()
+                gCondition.release()
                 break
             gMoney += money
             print("%s挣了%d元钱,余额%d元钱" % (threading.current_thread(),money,gMoney))
             gTime +=1
-            gLock.release() #释放锁
             time.sleep(0.5)
+            gCondition.notify_all()
+            gCondition.release() #释放锁
+
 #消费者
 class Consumer(threading.Thread):
     def run(self):
         global gMoney
+        global gCondition
         while True:
             money = random.randint(1000,10000)
-            gLock.acquire()
-            if gMoney >= money:
-                gMoney -= money
-                print("%s消费了%d元钱,余额%d元钱" % (threading.current_thread(), money, gMoney))
-            else:
+            gCondition.acquire()
+            while gMoney < money:
                 if gTime >= gTotalTimes:
-                    gLock.release()
-                    break
+                    gCondition.release()
+                    return
                 print("%s消费了%d元钱,余额%d元钱,余额不足" % (threading.current_thread(), money, gMoney))
-            gLock.release()
+                gCondition.wait() #阻塞等待
+            gMoney -= money
+            print("%s消费了%d元钱,余额%d元钱" % (threading.current_thread(), money, gMoney))
             time.sleep(0.5)
+            gCondition.release()
 
 def main():
 
