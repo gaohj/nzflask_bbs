@@ -14,6 +14,7 @@ class Producer(threading.Thread):
     def run(self):
         global gMoney
         global gTime
+        global gLock
         while True:
             money= random.randint(1000,10000)
             gLock.acquire() #上锁
@@ -29,6 +30,7 @@ class Producer(threading.Thread):
 class Consumer(threading.Thread):
     def run(self):
         global gMoney
+        global gLock
         while True:
             money = random.randint(1000,10000)
             gLock.acquire()

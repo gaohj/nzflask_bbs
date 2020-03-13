@@ -2,10 +2,206 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d932bb27-eede-4536-8c32-97a34467d7d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ajax/demo1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/demo2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫第4天.md" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫第4天.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo7.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Excuse me.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/giao.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/giao.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/一把辛酸泪.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/一群土狗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/万般不乐意.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/上号.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/上图直接作废.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/不开心.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/不开心小黄脸.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/不是的你听我狡辩.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/两边都要.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/亲亲.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/亲你！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/人是铁饭是钢兄弟吃了吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/今年真的有暑假.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/从未见过如此丑的蛋快撤！！！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/他妈了个ber.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/佛祖保佑.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你不馋女人身子你太监.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你个渣女.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你头像都带口罩可以啊.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你妈b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你就是蔡徐坤.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你扛个屁都我扛的.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你爹来了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你画画像蔡徐坤.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你的风骚打动了我.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你看看你.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你装逼前问过我的黄金猛兽散弹枪了吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你要是鲜花以后牛都不敢拉屎了！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你还没问我是谁呢.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/你闭嘴.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/停止思考了！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/再见我要去赶前天作业了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/写作业让我兴奋.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/切.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/加油呀.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/加油哦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/加油哦（cnm）.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/劳资一个旋风腿屎给你T出来.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/变态.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/只知道吃屎的废物.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/可以这很迪西.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/可以邀请你来一场惊险刺激的排位吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/可怜虫铁锅暖.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/叼毛兽我们走.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/吃惊.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/吃柠檬.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/吃饭.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/吸鼻涕.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/吹泡泡.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/呵呵.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/咕咕咕.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/哈哈哈哈哈.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/哎呀你不那谁吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/哎呦卧槽.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/哦泄特.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/哪里！哪里.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/哼不开心.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/哼傻逼.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/喝旺仔啦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/嘟嘴.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/嘻嘻.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/嘻嘻小新.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/嘿嘿.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/在吗我想揍你.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/大了双眼.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/大佬抽烟.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/大大的中指.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/大家小心点这个人是蔡徐坤的女人.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/太丢人了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/好兄弟.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/好啦好啦知道我很可爱.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/好惆怅.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/好那个哦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/妇炎洁.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/妈的什么人嘛.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/妹子来我家看书.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/学你妈.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/宁有事吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/安详.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/富婆手中抓住了未来.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/对不起心死了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/小伙子你可知道这是什么.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/小宝贝.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/小朋友你是否有很多问号.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/小猫发呆.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/小脸红了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/小黄鸡猪猪.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/就是那种网址.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/就这.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/屠苏酒三连.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/崽种出来挨打.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/差涩.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/差点没笑死我.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/已经没有什么好害怕的了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/师傅快看大师兄和师兄说的多有道理.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/希望人没事.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/废物才需要这个.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/开心.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/当事人当时就是想吃非常想吃.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/怎么都不说话了在打飞机.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/怎么都不说话了是不是被我帅到了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/怒吼.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/愣住手里的果果它突然就不香了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我……中意你啊！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我与傻逼群友.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我他妈就艾特你你能奈我何.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我他妈直接帅气.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我们要的是这个.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我们需要的是这个.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我压得住AKM的后坐力却压不住想你的心.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我哭了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我哭了小黄脸.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我想说的话很多时候都不知道怎么表达爱总是藏在眼睛里你却不知道也藏在这句子里.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我操.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我是文化人不想骂你我直接咬你的乳头.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我爱你！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/我警告你.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/手机禁了我QQ麦我解不开.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/打出感觉了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/打屁股.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/抱头.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/抱头痛苦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/抱抱.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/拜托你很弱唉.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/拿下莫斯科活捉斯大林.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/挠头.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/揍你丫的.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/握住简单的快乐.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/揣手手.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/擦汗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/是是是宁硕的泰对了蚌蚌蚌！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/最后一下.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/有点打击人再见.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/有趣.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/朕报欣货你.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/木马.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/来亲一个嘛.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/来来这里.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/楼上就是个傻逼.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/每当讲到这里他都会在轮椅上笑.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/没想到吧老子也是黑粉.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/流鼻血.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/淡定喝茶.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/游戏不是带来快乐的么为什么会这样.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/滑稽点赞.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/滑稽迅速跑来.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/滑车车啦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/点赞.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/熊猫人哭了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/熬夜冠军.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/牛逼.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/牛逼哦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/犹豫就会败北.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/猴哥说的对.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/玩心么美眉.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/理不直气也壮.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/男人是什么味来着.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/男左女右都趴下.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/疑问.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/瘫.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/看到本王还不跪下磕头.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/看戏.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/看见这坨翔没.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/真他妈让人害怕.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/社会人.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/章鱼哥坐姿.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/章鱼哥小朋友专属冰阔落.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/算了吧.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/精神小伙不请自来.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/红脸的关公战你爸.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/绅士.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/终究是一人扛下所有.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/给妈也整一个！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/网恋选我我超甜又骗感情又骗钱.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/老头.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/老子直接柱龙王嘴里手冲.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/舒舒坐姿.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/舒舒小朋友专属冰阔落.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/苦苦等车.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/草.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/行你没為你有理.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/让我这样你高兴了吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/请求互动.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/路过路过先告辞了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/这俩傻逼名字还一样笑死我.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/这憨批真会开玩笑.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/逆天尚有例外逆吾绝无生机.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/逐渐起了杀思.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/邢你也别扔给我扔别人去（钉钉）.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/锤子.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/闷死你个傻逼玩意.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/阿爸的肯定.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/马鸭.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/鸭鸭小黄鸡.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/龙王什么的要往死里.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/龙王只有占尽风流一貌倾城的人才配拥有.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,80 +212,86 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/day4$demo5.coverage" NAME="demo5 Coverage Results" MODIFIED="1583983172515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/day4$demo8.coverage" NAME="demo8 Coverage Results" MODIFIED="1583995557194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/day4$doutula.coverage" NAME="doutula Coverage Results" MODIFIED="1584004569146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/day4$doutula.coverage" NAME="doutula Coverage Results" MODIFIED="1584063369296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/day4$demo7.coverage" NAME="demo7 Coverage Results" MODIFIED="1583985419937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/day4$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1584006144643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ajax" />
+    <SUITE FILE_PATH="coverage/day4$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1584064453488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ajax" />
     <SUITE FILE_PATH="coverage/day4$demo3.coverage" NAME="demo3 Coverage Results" MODIFIED="1583982557830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/day4$demo9.coverage" NAME="demo9 Coverage Results" MODIFIED="1583997009871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/day4$demo10.coverage" NAME="demo10 Coverage Results" MODIFIED="1584002263042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/day4$demo6.coverage" NAME="demo6 Coverage Results" MODIFIED="1583983744079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/day4$bsbdj.coverage" NAME="bsbdj Coverage Results" MODIFIED="1584003893531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/day4$demo4.coverage" NAME="demo4 Coverage Results" MODIFIED="1583982854066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/day4$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1584006323785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ajax" />
+    <SUITE FILE_PATH="coverage/day4$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1584064517180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ajax" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-2106376101">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
-          <entry key="md" value="1" />
-          <entry key="png" value="2" />
-          <entry key="py" value="20" />
+          <entry key="md" value="2" />
+          <entry key="png" value="4" />
+          <entry key="py" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="2" />
-          <entry key="Markdown" value="1" />
+          <entry key="Image" value="4" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="20" />
+          <entry key="Python" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4945" />
+          <entry key="py" value="4952" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4945" />
+          <entry key="Python" value="4952" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax/demo1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="2" column="46" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajax/demo2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/爬虫第4天.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-26248" />
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/ajax/demo2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -115,7 +317,6 @@
         <option value="$PROJECT_DIR$/demo4.py" />
         <option value="$PROJECT_DIR$/demo5.py" />
         <option value="$PROJECT_DIR$/demo6.py" />
-        <option value="$PROJECT_DIR$/demo7.py" />
         <option value="$PROJECT_DIR$/demo8.py" />
         <option value="$PROJECT_DIR$/demo9.py" />
         <option value="$PROJECT_DIR$/demo10.py" />
@@ -123,6 +324,7 @@
         <option value="$PROJECT_DIR$/bsbdj.py" />
         <option value="$PROJECT_DIR$/ajax/demo1.py" />
         <option value="$PROJECT_DIR$/ajax/demo2.py" />
+        <option value="$PROJECT_DIR$/demo7.py" />
       </list>
     </option>
   </component>
@@ -143,6 +345,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,7 +362,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,29 +525,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1456" height="876" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17765044" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18194842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32884097" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4541779" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5336927" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Remote Host" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32884097" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3295129" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,123 +558,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/深度优先策略.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/广度优先策略.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="37" column="32" selection-end-line="47" />
-          <folding>
-            <element signature="e#16#25#0" expanded="true" />
-            <marker date="1583981086519" expanded="true" signature="589:594" ph="..." />
-            <marker date="1583981086519" expanded="true" signature="589:1211" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <marker date="1583982557815" expanded="true" signature="27:32" ph="..." />
-            <marker date="1583982557815" expanded="true" signature="202:207" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1583982854043" expanded="true" signature="280:453" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <marker date="1583994601831" expanded="true" signature="143:148" ph="..." />
-            <marker date="1583994601831" expanded="true" signature="254:383" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1583983093385" expanded="true" signature="67:206" ph="..." />
-            <marker date="1583983093385" expanded="true" signature="262:271" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-            <marker date="1583994601852" expanded="true" signature="170:614" ph="..." />
-            <marker date="1583994601852" expanded="true" signature="1223:1224" ph="..." />
-            <marker date="1583994601852" expanded="true" signature="1223:1229" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1977">
-          <caret line="55" column="22" lean-forward="true" selection-end-line="60" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python/Python36/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="757" column="23" selection-start-line="757" selection-start-column="21" selection-end-line="757" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo9.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-277">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1583997009857" expanded="true" signature="202:297" ph="..." />
-            <marker date="1583997009857" expanded="true" signature="314:355" ph="..." />
-            <marker date="1583997009857" expanded="true" signature="366:371" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="6" selection-start-line="6" selection-end-line="9" />
-          <folding>
-            <element signature="e#16#25#0" expanded="true" />
-            <marker date="1583980490401" expanded="true" signature="249:426" ph="..." />
-            <marker date="1583980490401" expanded="true" signature="569:570" ph="..." />
-            <marker date="1583980490401" expanded="true" signature="686:691" ph="..." />
-            <marker date="1583980490401" expanded="true" signature="686:1158" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -487,56 +577,177 @@
         <state relative-caret-position="-9702" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bsbdj.py">
+    <entry file="file://$PROJECT_DIR$/深度优先策略.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="798">
+          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="27" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#16#25#0" expanded="true" />
+            <marker date="1583980490401" expanded="true" signature="249:426" ph="..." />
+            <marker date="1583980490401" expanded="true" signature="569:570" ph="..." />
+            <marker date="1583980490401" expanded="true" signature="686:691" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doutula.py">
+    <entry file="file://$PROJECT_DIR$/广度优先策略.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="75" selection-end-line="81" selection-end-column="10" />
+        <state relative-caret-position="905">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1584002119614" expanded="true" signature="824:1390" ph="..." />
-            <marker date="1584002119614" expanded="true" signature="1823:1832" ph="..." />
-            <marker date="1584002119614" expanded="true" signature="2162:2167" ph="..." />
-            <marker date="1584002119614" expanded="true" signature="2162:2527" ph="..." />
+            <element signature="e#16#25#0" expanded="true" />
+            <marker date="1583981086519" expanded="true" signature="589:594" ph="..." />
+            <marker date="1583981086519" expanded="true" signature="589:1211" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <marker date="1583982557815" expanded="true" signature="27:32" ph="..." />
+            <marker date="1583982557815" expanded="true" signature="202:207" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1583982854043" expanded="true" signature="280:453" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1583983093385" expanded="true" signature="67:206" ph="..." />
+            <marker date="1583983093385" expanded="true" signature="262:271" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <marker date="1583994601831" expanded="true" signature="143:148" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <marker date="1584063053514" expanded="true" signature="170:635" ph="..." />
+            <marker date="1584063053514" expanded="true" signature="1265:1266" ph="..." />
+            <marker date="1584063053514" expanded="true" signature="1265:1271" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1583997009857" expanded="true" signature="202:297" ph="..." />
+            <marker date="1583997009857" expanded="true" signature="314:355" ph="..." />
+            <marker date="1583997009857" expanded="true" signature="366:371" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="378">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/demo1.py">
+    <entry file="file://C:/Python/Python36/Lib/urllib/request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="2" column="46" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="46" />
+        <state relative-caret-position="-401">
+          <caret line="229" column="4" selection-start-line="229" selection-start-column="4" selection-end-line="229" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/demo2.py">
+    <entry file="file://$PROJECT_DIR$/doutula.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="321">
+          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsbdj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="58" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/爬虫第4天.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-26248" />
+          <first_editor relative-caret-position="-15624" />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/jiangxiligong/1904_crawl_python3/Lib/site-packages/selenium/webdriver/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/demo2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>

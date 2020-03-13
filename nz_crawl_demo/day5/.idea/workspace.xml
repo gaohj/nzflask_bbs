@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07039e9f-3176-4d8e-879e-2e1f00baa4dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/demo1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/demo7.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/demo7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/Excuse me.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/giao.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/images/giao.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/一把辛酸泪.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/一群土狗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/万般不乐意.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/上号.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/上图直接作废.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/不开心.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/不开心小黄脸.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/不是的你听我狡辩.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/两边都要.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/亲亲.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/亲你！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/人是铁饭是钢兄弟吃了吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/今年真的有暑假.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/从未见过如此丑的蛋快撤！！！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/他妈了个ber.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/佛祖保佑.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你不馋女人身子你太监.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你个渣女.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你头像都带口罩可以啊.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你妈b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你就是蔡徐坤.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你扛个屁都我扛的.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你爹来了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你画画像蔡徐坤.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你的风骚打动了我.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你看看你.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你装逼前问过我的黄金猛兽散弹枪了吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你要是鲜花以后牛都不敢拉屎了！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你还没问我是谁呢.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/你闭嘴.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/停止思考了！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/再见我要去赶前天作业了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/写作业让我兴奋.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/切.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/加油呀.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/加油哦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/加油哦（cnm）.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/劳资一个旋风腿屎给你T出来.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/变态.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/只知道吃屎的废物.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/可以这很迪西.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/可以邀请你来一场惊险刺激的排位吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/可怜虫铁锅暖.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/叼毛兽我们走.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/吃惊.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/吃柠檬.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/吃饭.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/吸鼻涕.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/吹泡泡.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/呵呵.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/咕咕咕.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/哈哈哈哈哈.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/哎呀你不那谁吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/哎呦卧槽.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/哦泄特.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/哪里！哪里.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/哼不开心.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/哼傻逼.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/喝旺仔啦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/嘟嘴.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/嘻嘻.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/嘻嘻小新.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/嘿嘿.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/在吗我想揍你.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/大了双眼.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/大佬抽烟.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/大大的中指.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/大家小心点这个人是蔡徐坤的女人.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/太丢人了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/好兄弟.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/好啦好啦知道我很可爱.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/好惆怅.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/好那个哦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/妇炎洁.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/妈的什么人嘛.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/妹子来我家看书.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/学你妈.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/宁有事吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/安详.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/富婆手中抓住了未来.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/对不起心死了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/小伙子你可知道这是什么.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/小宝贝.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/小朋友你是否有很多问号.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/小猫发呆.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/小脸红了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/小黄鸡猪猪.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/就是那种网址.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/就这.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/屠苏酒三连.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/崽种出来挨打.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/差涩.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/差点没笑死我.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/已经没有什么好害怕的了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/师傅快看大师兄和师兄说的多有道理.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/希望人没事.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/废物才需要这个.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/开心.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/当事人当时就是想吃非常想吃.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/怎么都不说话了在打飞机.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/怎么都不说话了是不是被我帅到了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/怒吼.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/愣住手里的果果它突然就不香了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我……中意你啊！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我与傻逼群友.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我他妈就艾特你你能奈我何.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我他妈直接帅气.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我们要的是这个.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我们需要的是这个.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我压得住AKM的后坐力却压不住想你的心.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我哭了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我哭了小黄脸.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我想说的话很多时候都不知道怎么表达爱总是藏在眼睛里你却不知道也藏在这句子里.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我操.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我是文化人不想骂你我直接咬你的乳头.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我爱你！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/我警告你.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/手机禁了我QQ麦我解不开.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/打出感觉了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/打屁股.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/抱头.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/抱头痛苦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/抱抱.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/拜托你很弱唉.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/拿下莫斯科活捉斯大林.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/挠头.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/揍你丫的.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/握住简单的快乐.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/揣手手.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/擦汗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/是是是宁硕的泰对了蚌蚌蚌！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/最后一下.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/有点打击人再见.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/有趣.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/朕报欣货你.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/木马.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/来亲一个嘛.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/来来这里.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/楼上就是个傻逼.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/每当讲到这里他都会在轮椅上笑.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/没想到吧老子也是黑粉.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/流鼻血.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/淡定喝茶.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/游戏不是带来快乐的么为什么会这样.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/滑稽点赞.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/滑稽迅速跑来.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/滑车车啦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/点赞.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/熊猫人哭了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/熬夜冠军.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/牛逼.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/牛逼哦.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/犹豫就会败北.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/猴哥说的对.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/玩心么美眉.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/理不直气也壮.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/男人是什么味来着.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/男左女右都趴下.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/疑问.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/瘫.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/看到本王还不跪下磕头.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/看戏.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/看见这坨翔没.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/真他妈让人害怕.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/社会人.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/章鱼哥坐姿.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/章鱼哥小朋友专属冰阔落.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/算了吧.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/精神小伙不请自来.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/红脸的关公战你爸.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/绅士.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/终究是一人扛下所有.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/给妈也整一个！.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/网恋选我我超甜又骗感情又骗钱.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/老头.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/老子直接柱龙王嘴里手冲.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/舒舒坐姿.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/舒舒小朋友专属冰阔落.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/苦苦等车.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/草.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/行你没為你有理.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/让我这样你高兴了吗.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/请求互动.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/路过路过先告辞了.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/这俩傻逼名字还一样笑死我.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/这憨批真会开玩笑.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/逆天尚有例外逆吾绝无生机.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/逐渐起了杀思.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/邢你也别扔给我扔别人去（钉钉）.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/锤子.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/闷死你个傻逼玩意.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/阿爸的肯定.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/马鸭.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/鸭鸭小黄鸡.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/龙王什么的要往死里.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day4/images/龙王只有占尽风流一貌倾城的人才配拥有.jpg" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/day5$demo3.coverage" NAME="demo3 Coverage Results" MODIFIED="1584066631081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/day5$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1584064719982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/day5$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1584066375414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="381136733">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="634" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="634" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="6" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/demo1.py" />
+        <option value="$PROJECT_DIR$/demo2.py" />
+        <option value="$PROJECT_DIR$/demo3.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="day5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day5" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.demo3">
+    <configuration name="demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="day5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="day5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="day5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.demo1" />
+      <item itemvalue="Python.demo2" />
+      <item itemvalue="Python.demo3" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.demo3" />
+        <item itemvalue="Python.demo2" />
+        <item itemvalue="Python.demo1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07039e9f-3176-4d8e-879e-2e1f00baa4dc" name="Default Changelist" comment="" />
+      <created>1584064565524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584064565524</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1456" height="876" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Remote Host" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/jiangxiligong/1904_crawl_python3/Lib/site-packages/selenium/webdriver/common/action_chains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
