@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c98bc43b-d3a5-41f9-9b17-961f33f98e11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/shixiseng.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy/Scrapy框架架构.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy/Twisted-18.9.0-cp36-cp36m-win_amd64.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy/scrapy-redis/Scrapy-Redis分布式爬虫组件.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy/scrapy-redis/fenbushi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy/scrapy-redis/redis教程.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy/scrapy-redis/scrapy-redis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy/scrapy-redis/scrapy_all.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy/scrapy_all.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy/框架图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy/目录结构.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shixiseng.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="255">
+              <caret line="82" column="11" lean-forward="true" selection-end-line="86" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -88,8 +97,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>60e</find>
       <find>base64</find>
+      <find>60e</find>
       <find>天</find>
     </findStrings>
   </component>
@@ -140,6 +149,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\www\wh1904\nz_bbs\nz_crawl_demo\day7" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -227,7 +241,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -298,8 +312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shixiseng.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="255">
+          <caret line="82" column="11" lean-forward="true" selection-end-line="86" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
