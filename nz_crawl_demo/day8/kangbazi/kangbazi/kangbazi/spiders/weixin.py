@@ -22,7 +22,7 @@ class WeixinSpider(CrawlSpider):
         p = response.xpath('//p[@class="authors"]')
         author= p.xpath('.//a/text()').get()
         pub_time = p.xpath('.//span/text()').get()
-        article_content= response.xpath('//*[@id="article_content"]').getall()
+        article_content= response.xpath('//*[@id="article_content"]//text()').getall()
         content = "".join(article_content).strip()
         item = KangbaziItem(title=title,content=content,pub_time=pub_time,author=author)
         yield item
