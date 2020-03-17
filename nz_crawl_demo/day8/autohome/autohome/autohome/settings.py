@@ -8,7 +8,7 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-
+import os
 BOT_NAME = 'autohome'
 
 SPIDER_MODULES = ['autohome.spiders']
@@ -66,8 +66,11 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+from scrapy.pipelines.images import ImagesPipeline
 ITEM_PIPELINES = {
-   'autohome.pipelines.AutohomePipeline': 300,
+   # 'autohome.pipelines.AutohomePipeline': 300,
+   #  'scrapy.pipelines.images.ImagesPipeline':100
+    'autohome.pipelines.Bmw8Pipeline':100
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -90,3 +93,4 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+IMAGES_STORE = os.path.join(os.path.dirname(os.path.dirname(__file__)),'images')
