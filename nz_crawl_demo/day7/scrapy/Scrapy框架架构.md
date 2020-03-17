@@ -13,11 +13,11 @@
 
 ## Scrapy![框架图](框架图.png)框架模块功能：
 
-1.爬虫发送请求 并不是马上发出去  而是引擎 
+1.爬虫发送请求 并不是马上发出去  而是给引擎 
 
-2.再 发给调度器 调度器接收到url  以后 将url生成requests对象 存储到队列中
+2.引擎发给调度器 调度器接收到url  以后 将url生成requests对象 存储到队列中
 
-3.引擎从调度器种取出请求 
+3.引擎从调度器中取出请求 
 
 4.引擎将requests对象 扔给下载器   
 
@@ -30,6 +30,10 @@
  8.引擎再给管道   存到 redis 或者mysql 或者 mongodb中
 
  引擎和下载器  之间 有中间件    爬虫和 引擎之间 也有中间件   
+
+
+
+
 
 1. `Scrapy Engine（引擎）`：`Scrapy`框架的核心部分。负责在`Spider`和`ItemPipeline`、`Downloader`、`Scheduler`中间通信、传递数据等。类似于汽车发动机
 2. `Spider（爬虫）`：发送需要爬取的链接给引擎，最后引擎把其他模块请求回来的数据再发送给爬虫，爬虫就去解析想要的数据。这个部分是我们开发者自己写的，因为要爬取哪些链接，页面中的哪些数据是我们需要的，都是由程序员自己决定。
@@ -51,8 +55,13 @@
 >
 > 1. 在`ubuntu`上安装`scrapy`之前，需要先安装以下依赖：
 >     `sudo apt-get install python3-dev build-essential python3-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev`，然后再通过`pip install scrapy`安装。
+>     
 > 2. 如果在`windows`系统下，提示这个错误`ModuleNotFoundError: No module named 'win32api'`，那么使用以下命令可以解决：`pip install pypiwin32`。
-> 3. 下载 Twisted-18.9.0-cp36-cp36m-win_amd64.whl 然后放到指定的目录下 纯英文 没权限限制   切换到这个目录  pip install Twisted-18.9.0-cp36-cp36m-win_amd64.whl    
+>
+> 3. 下载 Twisted-18.9.0-cp36-cp36m-win_amd64.whl 然后放到指定的目录下 纯英文 没权限限制   切换到这个目录  pip install Twisted-18.9.0-cp36-cp36m-win_amd64.whl     
+>
+>     下载指定的python版本及系统版本
+>
 > 4. pip install scrapy  
 
 ## 快速入门：
