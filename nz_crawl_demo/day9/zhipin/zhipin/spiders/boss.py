@@ -15,7 +15,7 @@ class BossSpider(CrawlSpider):
     )
 
     def parse_job(self, response):
-        print(response)
+        print(88888)
         name = response.xpath("//h1/text()").get()
         print(name)
         item = {}

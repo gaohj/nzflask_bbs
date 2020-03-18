@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad797441-1116-42a2-b750-d53e77a12acd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zhipin/zhipin/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jianshu/start.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zhipin/zhipin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/settings.py" afterDir="false" />
@@ -15,8 +15,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/day9$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1584504129567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhipin" />
-    <SUITE FILE_PATH="coverage/day9$start.coverage" NAME="start Coverage Results" MODIFIED="1584516908269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhipin" />
+    <SUITE FILE_PATH="coverage/day9$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1584525909320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jianshu" />
+    <SUITE FILE_PATH="coverage/day9$start.coverage" NAME="start Coverage Results" MODIFIED="1584520184843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhipin" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1741253453">
@@ -30,22 +30,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="31" />
+          <entry key="md" value="1" />
+          <entry key="py" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="31" />
+          <entry key="Markdown" value="1" />
+          <entry key="Python" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2253" />
+          <entry key="py" value="3907" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2253" />
+          <entry key="Python" value="3906" />
+          <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -53,45 +56,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/settings.py">
+        <entry file="file://$PROJECT_DIR$/jianshu/jianshu/spiders/js.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+            <state relative-caret-position="171">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/middlewares.py">
+        <entry file="file://$PROJECT_DIR$/jianshu/start.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="174" column="41" selection-start-line="174" selection-start-column="41" selection-end-line="174" selection-end-column="41" />
-              <folding>
-                <marker date="1584516845668" expanded="true" signature="5392:5489" ph="..." />
-                <marker date="1584516845668" expanded="true" signature="5604:5613" ph="..." />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jianshu/jianshu/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1109">
+              <caret line="121" column="16" lean-forward="true" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/models.py">
+        <entry file="file://$PROJECT_DIR$/jianshu/jianshu/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="337">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
-                <marker date="1584517009685" expanded="true" signature="236:237" ph="..." />
-                <marker date="1584517009685" expanded="true" signature="236:241" ph="..." />
+                <element signature="e#194#208#0" expanded="true" />
+                <marker date="1584526309576" expanded="true" signature="292:654" ph="..." />
+                <marker date="1584526309576" expanded="true" signature="1860:1995" ph="..." />
+                <marker date="1584526309576" expanded="true" signature="2029:2038" ph="..." />
+                <marker date="1584526309576" expanded="true" signature="2029:2085" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhipin/start.py">
+        <entry file="file://$PROJECT_DIR$/jianshu/jianshu/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="12">
+              <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jianshu/jianshu/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -117,10 +140,16 @@
         <option value="$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/middlewares.py" />
         <option value="$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/settings.py" />
         <option value="$PROJECT_DIR$/zhipin/start.py" />
+        <option value="$PROJECT_DIR$/zhipin/zhipin/models.py" />
         <option value="$PROJECT_DIR$/zhipin/zhipin/spiders/boss.py" />
         <option value="$PROJECT_DIR$/zhipin/zhipin/settings.py" />
         <option value="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" />
-        <option value="$PROJECT_DIR$/zhipin/zhipin/models.py" />
+        <option value="$PROJECT_DIR$/jianshu/start.py" />
+        <option value="$PROJECT_DIR$/jianshu/jianshu/middlewares.py" />
+        <option value="$PROJECT_DIR$/jianshu/jianshu/items.py" />
+        <option value="$PROJECT_DIR$/jianshu/jianshu/spiders/js.py" />
+        <option value="$PROJECT_DIR$/jianshu/jianshu/settings.py" />
+        <option value="$PROJECT_DIR$/jianshu/jianshu/pipelines.py" />
       </list>
     </option>
   </component>
@@ -152,19 +181,19 @@
             <path>
               <item name="day9" type="b2602c69:ProjectViewProjectNode" />
               <item name="day9" type="462c0819:PsiDirectoryNode" />
-              <item name="zhipin" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="day9" type="b2602c69:ProjectViewProjectNode" />
               <item name="day9" type="462c0819:PsiDirectoryNode" />
-              <item name="zhipin" type="462c0819:PsiDirectoryNode" />
-              <item name="zhipin" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="day9" type="b2602c69:ProjectViewProjectNode" />
               <item name="day9" type="462c0819:PsiDirectoryNode" />
-              <item name="zhipin" type="462c0819:PsiDirectoryNode" />
-              <item name="zhipin" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -180,6 +209,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\www\wh1904\nz_bbs\nz_crawl_demo\day9\jianshu" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -192,7 +226,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.start (1)">
+    <configuration name="start (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="day9" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jianshu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jianshu/start.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="day9" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,8 +271,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.start" />
+      <item itemvalue="Python.start (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.start (1)" />
         <item itemvalue="Python.start" />
       </list>
     </recent_temporary>
@@ -247,12 +308,12 @@
     <frame x="-8" y="0" width="1456" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12750717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.8221024" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8773585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -322,13 +383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/spiders/boss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -339,45 +393,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/settings.py">
+    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/spiders/boss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="45" />
+        <state relative-caret-position="489">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/settings.py">
+    <entry file="file://$PROJECT_DIR$/下载器中间件.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        <state relative-caret-position="588">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <marker date="1584517009685" expanded="true" signature="236:237" ph="..." />
+            <marker date="1584517009685" expanded="true" signature="236:241" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhipin/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="44" selection-start-line="44" selection-end-line="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhipin/zhipin/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="174" column="41" selection-start-line="174" selection-start-column="41" selection-end-line="174" selection-end-column="41" />
+        <state relative-caret-position="210">
+          <caret line="125" selection-start-line="125" selection-end-line="146" selection-end-column="23" />
           <folding>
-            <marker date="1584516845668" expanded="true" signature="5392:5489" ph="..." />
-            <marker date="1584516845668" expanded="true" signature="5604:5613" ph="..." />
+            <marker date="1584520184824" expanded="true" signature="5440:5584" ph="..." />
+            <marker date="1584520184824" expanded="true" signature="5699:5708" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/models.py">
+    <entry file="file://$PROJECT_DIR$/jianshu/jianshu/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="185">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jianshu/jianshu/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1109">
+          <caret line="121" column="16" lean-forward="true" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jianshu/jianshu/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jianshu/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jianshu/jianshu/spiders/js.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
-            <marker date="1584517009685" expanded="true" signature="236:237" ph="..." />
-            <marker date="1584517009685" expanded="true" signature="236:241" ph="..." />
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jianshu/jianshu/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#194#208#0" expanded="true" />
+            <marker date="1584526309576" expanded="true" signature="292:654" ph="..." />
+            <marker date="1584526309576" expanded="true" signature="1860:1995" ph="..." />
+            <marker date="1584526309576" expanded="true" signature="2029:2038" ph="..." />
+            <marker date="1584526309576" expanded="true" signature="2029:2085" ph="..." />
           </folding>
         </state>
       </provider>

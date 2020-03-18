@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for zhipin project
+# Scrapy settings for jianshu project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'zhipin'
+BOT_NAME = 'jianshu'
 
-SPIDER_MODULES = ['zhipin.spiders']
-NEWSPIDER_MODULE = 'zhipin.spiders'
+SPIDER_MODULES = ['jianshu.spiders']
+NEWSPIDER_MODULE = 'jianshu.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'zhipin (+http://www.yourdomain.com)'
+#USER_AGENT = 'jianshu (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -27,7 +27,7 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 1
+DOWNLOAD_DELAY = 0.5
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -49,16 +49,13 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'zhipin.middlewares.ZhipinSpiderMiddleware': 543,
+#    'jianshu.middlewares.JianshuSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   'zhipin.middlewares.IpproxyDownloadMiddleware': 1,
-   # 'zhipin.middlewares.SeleniumMiddleware': 55,
-   'zhipin.middlewares.BossUserAgentDownloadMiddleware': 88,
-
+   # 'jianshu.middlewares.SeleniumMiddleware': 100,
 }
 
 # Enable or disable extensions
@@ -69,9 +66,10 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'zhipin.pipelines.ZhipinPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   # 'jianshu.pipelines.JianshuPipeline': 300,
+   'jianshu.pipelines.JianshuTwistedPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
