@@ -14,7 +14,8 @@ class BossSpider(CrawlSpider):
         Rule(LinkExtractor(allow=r'.+job_detail/[0-9a-zA-Z~_]+\.html'), callback='parse_job', follow=False),
     )
 
-    def parse_item(self, response):
+    def parse_job(self, response):
+        print(response)
         name = response.xpath("//h1/text()").get()
         print(name)
         item = {}

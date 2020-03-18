@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad797441-1116-42a2-b750-d53e77a12acd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zhipin/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day8/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhipin/zhipin/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Agent/useragent_demo/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agent/useragent_demo/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/spiders/ipproxy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/spiders/ipproxy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhipin/zhipin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zhipin/zhipin/spiders/boss.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/spiders/boss.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/day9$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1584504129567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhipin" />
-    <SUITE FILE_PATH="coverage/day9$start.coverage" NAME="start Coverage Results" MODIFIED="1584504266144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhipin" />
+    <SUITE FILE_PATH="coverage/day9$start.coverage" NAME="start Coverage Results" MODIFIED="1584516908269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhipin" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1741253453">
@@ -32,42 +30,68 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="18" />
+          <entry key="py" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="18" />
+          <entry key="Python" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="794" />
+          <entry key="py" value="2253" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="794" />
+          <entry key="Python" value="2253" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/middlewares.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1067">
-              <caret line="117" column="31" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="31" />
+            <state relative-caret-position="437">
+              <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/settings.py">
+        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+            <state relative-caret-position="311">
+              <caret line="174" column="41" selection-start-line="174" selection-start-column="41" selection-end-line="174" selection-end-column="41" />
+              <folding>
+                <marker date="1584516845668" expanded="true" signature="5392:5489" ph="..." />
+                <marker date="1584516845668" expanded="true" signature="5604:5613" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <folding>
+                <marker date="1584517009685" expanded="true" signature="236:237" ph="..." />
+                <marker date="1584517009685" expanded="true" signature="236:241" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhipin/start.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -92,10 +116,11 @@
         <option value="$PROJECT_DIR$/Agent/useragent_demo/start.py" />
         <option value="$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/middlewares.py" />
         <option value="$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/settings.py" />
-        <option value="$PROJECT_DIR$/zhipin/zhipin/spiders/boss.py" />
         <option value="$PROJECT_DIR$/zhipin/start.py" />
-        <option value="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" />
+        <option value="$PROJECT_DIR$/zhipin/zhipin/spiders/boss.py" />
         <option value="$PROJECT_DIR$/zhipin/zhipin/settings.py" />
+        <option value="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" />
+        <option value="$PROJECT_DIR$/zhipin/zhipin/models.py" />
       </list>
     </option>
   </component>
@@ -123,24 +148,6 @@
             <path>
               <item name="day9" type="b2602c69:ProjectViewProjectNode" />
               <item name="day9" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="day9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day9" type="462c0819:PsiDirectoryNode" />
-              <item name="Agent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="day9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day9" type="462c0819:PsiDirectoryNode" />
-              <item name="Agent" type="462c0819:PsiDirectoryNode" />
-              <item name="useragent_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="day9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day9" type="462c0819:PsiDirectoryNode" />
-              <item name="Agent" type="462c0819:PsiDirectoryNode" />
-              <item name="useragent_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="useragent_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="day9" type="b2602c69:ProjectViewProjectNode" />
@@ -227,24 +234,34 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1456" height="876" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5013477" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8221024" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32884097" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32884097" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32884097" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -284,44 +301,6 @@
     <entry file="file://$PROJECT_DIR$/zhipin/zhipin/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/spiders/boss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhipin/start.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="83" selection-start-line="83" selection-end-line="92" />
-          <folding>
-            <marker date="1584502345896" expanded="true" signature="1967:1972" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Agent/useragent_demo/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -329,10 +308,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/jiangxiligong/1904_crawl_python3/Lib/site-packages/scrapy/http/response/html.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/jiangxiligong/1904_crawl_python3/Lib/site-packages/scrapy/http/response/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-393">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/spiders/boss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="82" column="29" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="29" />
+          <folding>
+            <marker date="1584502345896" expanded="true" signature="1967:1972" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agent/useragent_demo/useragent_demo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="59" column="47" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zhipin/zhipin/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1067">
-          <caret line="117" column="31" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="31" />
+        <state relative-caret-position="311">
+          <caret line="174" column="41" selection-start-line="174" selection-start-column="41" selection-end-line="174" selection-end-column="41" />
+          <folding>
+            <marker date="1584516845668" expanded="true" signature="5392:5489" ph="..." />
+            <marker date="1584516845668" expanded="true" signature="5604:5613" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <marker date="1584517009685" expanded="true" signature="236:237" ph="..." />
+            <marker date="1584517009685" expanded="true" signature="236:241" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
