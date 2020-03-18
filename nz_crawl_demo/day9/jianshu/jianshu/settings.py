@@ -68,7 +68,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    # 'jianshu.pipelines.JianshuPipeline': 300,
-   'jianshu.pipelines.JianshuTwistedPipeline': 300,
+   'jianshu.pipelines.JianshuTwistedSpiderPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

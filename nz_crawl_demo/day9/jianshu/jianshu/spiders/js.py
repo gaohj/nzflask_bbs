@@ -24,5 +24,5 @@ class JsSpider(CrawlSpider):
         article_id = url.split("/")[-1]
         content = response.xpath('//*[@id="__next"]/div[1]/div/div/section[1]/article').getall()
         contents = "".join(content).strip()
-        item = JianshuItem(title=title,article_id=article_id,content=content)
+        item = JianshuItem(title=title,article_id=article_id,content=contents)
         yield item

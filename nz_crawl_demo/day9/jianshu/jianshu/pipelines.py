@@ -42,13 +42,14 @@ class JianshuPipeline(object):
 
 
 from twisted.enterprise import adbapi
-class JianshuTwistedPipeline(object): #采用 twisted 异步id
+from pymysql import cursors
+class JianshuTwistedSpiderPipeline(object):
     def __init__(self):
         dbparams = {
             'host':'rm-2zeurakrzwvrqp7o0qo.mysql.rds.aliyuncs.com',
             'port':3306,
-            'user':'',
-            'password':'',
+            'user':'gaohj5',
+            'password':'KANGBAZI01!',
             'database':'jianshu',
             'charset':'utf8',
             'cursorclass':cursors.DictCursor
@@ -61,19 +62,19 @@ class JianshuTwistedPipeline(object): #采用 twisted 异步id
     def sql(self):
         if not self._sql:
             self._sql = """
-                insert into article(title,content,article_id) values (%s,%s,%s)
-            """
+               insert into article(title,content,article_id) values (%s,%s,%s)
+               """
             return self._sql
         return self._sql
 
-    def process_item(self,item,spider):
+    def process_item(self, item, spider):
         defer = self.dbpool.runInteraction(self.insert_item,item) #异步操作
-        # defer.addErrback(self.handle_error,item,spider)
-    def insert_item(self,cursor,item):
-        # print(item['title'],item['content'])
-        cursor.execute(self.sql,(item['title'], item['content'], item['article_id']))
+        defer.addErrback(self.handle_error,item, spider)
+        #真正执行  和抛出错误需要另外的两个方法
+    def insert_item(self,cursor,item):#item传递过来之前 先把游标 对象传过来
+        cursor.execute(self.sql,(item['title'], item['content'],item['article_id']))
 
-    def handle_error(self,error,item,spider):
+    def handle_error(self,error,item,spider):#item传递过来之前 先把游标 对象处
+        print("="*20+"error"+"="*20)
         print(error)
-
-
+        print("=" * 20 + "error" + "=" * 20)
