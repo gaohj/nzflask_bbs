@@ -8,7 +8,7 @@
 from scrapy import signals
 
 
-class UseragentDemoSpiderMiddleware(object):
+class ZhipinSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -55,8 +55,55 @@ class UseragentDemoSpiderMiddleware(object):
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
 
+
+class ZhipinDownloaderMiddleware(object):
+    # Not all methods need to be defined. If a method is not defined,
+    # scrapy acts as if the downloader middleware does not modify the
+    # passed objects.
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        # This method is used by Scrapy to create your spiders.
+        s = cls()
+        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
+        return s
+
+    def process_request(self, request, spider):
+        # Called for each request that goes through the downloader
+        # middleware.
+
+        # Must either:
+        # - return None: continue processing this request
+        # - or return a Response object
+        # - or return a Request object
+        # - or raise IgnoreRequest: process_exception() methods of
+        #   installed downloader middleware will be called
+        return None
+
+    def process_response(self, request, response, spider):
+        # Called with the response returned from the downloader.
+
+        # Must either;
+        # - return a Response object
+        # - return a Request object
+        # - or raise IgnoreRequest
+        return response
+
+    def process_exception(self, request, exception, spider):
+        # Called when a download handler or a process_request()
+        # (from other downloader middleware) raises an exception.
+
+        # Must either:
+        # - return None: continue processing this exception
+        # - return a Response object: stops process_exception() chain
+        # - return a Request object: stops process_exception() chain
+        pass
+
+    def spider_opened(self, spider):
+        spider.logger.info('Spider opened: %s' % spider.name)
+
 import random
-class UserAgentDownloadMiddleware(object):
+class BossUserAgentDownloadMiddleware(object):
     USER_AGENTS =[
         'Opera/9.80 (Windows NT 6.1; U; en) Presto/2.8.131 Version/11.11',
         'Mozilla/5.0 (X11; Linux i686; rv:64.0) Gecko/20100101 Firefox/64.0',
@@ -67,20 +114,6 @@ class UserAgentDownloadMiddleware(object):
         user_agent = random.choice(self.USER_AGENTS)
         request.headers['User-Agent'] = user_agent
 
-    # def process_response(self,request,spider):
-    #     pass
-
-# class IpproxyDownloadMiddleware(object):
-#     PROXIES =[
-#         "http://118.112.195.179:9999",
-#         "http://39.137.69.7:8080",
-#         "http://221.180.170.104:8080",
-#         "http://39.137.95.74:80",
-#     ]
-#
-#     def process_request(self,request,spider):
-#         proxy = random.choice(self.PROXIES)
-#         request.meta['proxy'] = proxy
 import base64
 class IpproxyDownloadMiddleware(object):
 
@@ -90,4 +123,3 @@ class IpproxyDownloadMiddleware(object):
         b64_user_password = base64.b64encode(user_password.encode("utf-8"))
         request.headers["Proxy-Authorization"] = "Basic " + b64_user_password.decode("utf-8")
         return None
-
