@@ -2,60 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b2c16ad-fd07-4b31-b6dc-066c9b86761b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/下载文件和图片.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day9/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day9/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jianshu_spider/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jianshu_spider/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/autohome/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/autohome/autohome/autohome/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/autohome/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/autohome/autohome/autohome/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/autohome/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/autohome/autohome/autohome/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autohome/autohome/autohome/spiders/bmw8.py" beforeDir="false" afterPath="$PROJECT_DIR$/autohome/autohome/autohome/spiders/bmw8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/中控方向盘/ChcCQF0CSQ-ARfiyAAkkkZiaQhY441.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/中控方向盘/ChcCQF0CSQ2ABUihAAkwIztBcI4430.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/中控方向盘/ChcCQF0CSQuATtnAAAXMisYK4vY638.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/中控方向盘/ChsEe10CSQyAI7w7AAZaxELredo698.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/中控方向盘/ChsEfF0CSQqAZRiaAAPcJVrFsWw709.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/中控方向盘/ChsEnV0CSQ2Ad8vTAAkWPX08YhU759.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/中控方向盘/M264.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/中控方向盘/f0dNKQc007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/其它细节/ChcCRF0CSM6AZ81IAAmkvBEE-8M749.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/其它细节/ChcCRF0CSNKAHIRlAAlEuMP90vs881.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/其它细节/ChcCSV0CSM-APMl1AAgYXnhGKSw567.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/其它细节/ChsEkF0CSNCAPxvmAAdPFK4KoCY922.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/其它细节/ChsEoF0CSNGAEZLpAAmwd62eaec553.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/其它细节/ChsEoF0CSNOALue0AApo-mxvxy0707.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/其它细节/Rtj-E265.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/其它细节/xDVf9SM801.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/官图/ChcCP12QDk-ABjrLAAqXJqeVlW0812.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/官图/ChcCP12QDlCAerYTAA8CT6fu2Ws747.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/官图/ChcCP12QDlOAcswHAAsU-HHlrSg846.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/官图/ChcCSF2QDlSAGG3yAAvKzSMV0OE604.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/官图/ChcCSF2QDlWAQK6PAAweiXoORIo938.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/官图/ChsEe12QDlGAEVhnAAwjEw-PS9E830.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/官图/ChsEfl2QDlKAH5zYAA5Gd5lz4Tc976.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/官图/ChsEnF2QDk-ACKEbAAwEi1ZDPQc249.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车厢座椅/ChsEf10CSUKAWbXmAAjq5Fmw96s136.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车厢座椅/ChsEf10CSUOAVR9mAAl0KNuQm2o153.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车厢座椅/ChsEfl0CST6AVxDrAAZZjXs0o2U354.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车厢座椅/ChsEfl0CSUGARk2kAAewsl-ke4k783.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车厢座椅/ChsEn10CST-AGfcgAAXNHPfhlF0536.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车厢座椅/ChsEoF0CSUCASsNzAATDPxYCCEA502.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车厢座椅/ChsEoF0CSUCATw3rAARJMFYK-FY382.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车厢座椅/Q275.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车身外观/74101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车身外观/AAlW851VPHI433.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车身外观/ChsEf10CSUWAHkFPAAnHfUa7nmU153.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车身外观/ChsEfl0CSUSATe9HAAleF4avOpo996.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车身外观/ChsEn10CSUmAHmqsAAm2XOgbAEI053.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车身外观/ChsEoF0CSUaAKQtvAAinsMfzs2k467.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车身外观/Ug886.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/车身外观/eo889.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/重要特点/-s224.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/重要特点/AANRdrw6Sfw415.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/重要特点/ChsEeV3xBICAQ5OUAAIJND0MhrA698.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/重要特点/ChsEeV3xBIKAAkuSAAOJDPo9psQ513.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/重要特点/ChsEfF3xBISAU7cWAAILneuUX6Y359.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/重要特点/ChsEnV3xBIeAXnJGAARc-OSBDuw493.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/重要特点/bAAJ9t21S7NI219.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autohome/autohome/images/重要特点/o9IUzdg617.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,79 +40,85 @@
     <session id="-746259381">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="101" />
-          <entry key="py" value="2726" />
+          <entry key="py" value="2743" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="101" />
-          <entry key="Python" value="2726" />
+          <entry key="Python" value="2743" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="jpg" value="15" />
-          <entry key="js" value="5" />
+          <entry key="js" value="6" />
           <entry key="json" value="11" />
-          <entry key="md" value="4" />
-          <entry key="py" value="41" />
+          <entry key="md" value="7" />
+          <entry key="py" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="15" />
           <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="5" />
-          <entry key="Markdown" value="4" />
-          <entry key="Python" value="41" />
+          <entry key="JavaScript" value="6" />
+          <entry key="Markdown" value="7" />
+          <entry key="Python" value="49" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autohome/autohome/autohome/spiders/bmw8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="507">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
-                <marker date="1584434933728" expanded="true" signature="753:1146" ph="..." />
+                <marker date="1584498075879" expanded="true" signature="753:1146" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autohome/autohome/start.py">
+        <entry file="file://C:/jiangxiligong/1904_crawl_python3/Lib/site-packages/scrapy/http/request/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="-99">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scrapy/Scrapy框架架构.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-6678" />
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/autohome/autohome/autohome/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="91" column="25" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autohome/autohome/images/官图/7fb12f1feb1a8acb4add840dd659cc28f4f86562.jpg">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/scrapy/Scrapy框架架构.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -200,6 +158,7 @@
         <option value="$PROJECT_DIR$/autohome/autohome/autohome/settings.py" />
         <option value="$PROJECT_DIR$/autohome/autohome/autohome/pipelines.py" />
         <option value="$PROJECT_DIR$/autohome/autohome/start.py" />
+        <option value="$PROJECT_DIR$/autohome/autohome/autohome/middlewares.py" />
         <option value="$PROJECT_DIR$/autohome/autohome/autohome/spiders/bmw8.py" />
       </list>
     </option>
@@ -237,13 +196,28 @@
             <path>
               <item name="day8" type="b2602c69:ProjectViewProjectNode" />
               <item name="day8" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
+              <item name="autohome" type="462c0819:PsiDirectoryNode" />
+              <item name="autohome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day8" type="462c0819:PsiDirectoryNode" />
+              <item name="autohome" type="462c0819:PsiDirectoryNode" />
+              <item name="autohome" type="462c0819:PsiDirectoryNode" />
+              <item name="autohome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day8" type="462c0819:PsiDirectoryNode" />
+              <item name="autohome" type="462c0819:PsiDirectoryNode" />
+              <item name="autohome" type="462c0819:PsiDirectoryNode" />
+              <item name="autohome" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="day8" type="b2602c69:ProjectViewProjectNode" />
               <item name="day8" type="462c0819:PsiDirectoryNode" />
               <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy-redis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -254,6 +228,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/www/wh1904/nz_bbs/nz_crawl_demo/day8/autohome/autohome/start.py" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jianshu_spider" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -419,15 +394,9 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1456" height="876" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25931233" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32884097" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5444744" />
@@ -435,12 +404,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Remote Host" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" weight="0.3295129" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32884097" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3295129" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,13 +428,6 @@
     <entry file="file://$PROJECT_DIR$/fanyi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4158" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fanyi_use.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="12" column="9" selection-start-column="3" selection-end-line="12" selection-end-column="9" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wh1904/budejie.json">
@@ -478,9 +446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-          <folding>
-            <marker date="1584415213531" expanded="true" signature="764:765" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -545,9 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" column="50" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="50" />
-          <folding>
-            <marker date="1584417763364" expanded="true" signature="301:440" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,17 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="50" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <marker date="1584427458272" expanded="true" signature="595:634" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/jiangxiligong/1904_crawl_python3/Lib/site-packages/scrapy/http/request/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -583,43 +534,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="50" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js混淆反爬.py">
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/其它细节/ChcCRF0CSNKAHIRlAAlEuMP90vs881.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/中控方向盘/ChcCQF0CSQ2ABUihAAkwIztBcI4430.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/官图/ChcCSF2QDlSAGG3yAAvKzSMV0OE604.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/官图/ChcCP12QDk-ABjrLAAqXJqeVlW0812.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/其它细节/ChcCSV0CSM-APMl1AAgYXnhGKSw567.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/其它细节/ChcCRF0CSM6AZ81IAAmkvBEE-8M749.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/重要特点/-s224.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/中控方向盘/1adc886453ba3a2d8282005bf557f5cfdb25c9c6.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/中控方向盘/1ff48af258115ad7ecfb48d9475d329f60ba9ef9.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/中控方向盘/7ac44457940dbf10c57725d1e47efa0604e1c003.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/中控方向盘/68ea5deeaf5d27c8fba30fe1bd5091e86af3bc02.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/官图/7fb12f1feb1a8acb4add840dd659cc28f4f86562.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/官图/d03d84c3cd4170ade5b67ed5c594b5737516a5bb.jpg" />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/start.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1584412808945" expanded="true" signature="307:727" ph="..." />
-          </folding>
+        <state relative-caret-position="84">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/其它细节/ChcCRF0CSNKAHIRlAAlEuMP90vs881.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/中控方向盘/ChcCQF0CSQ2ABUihAAkwIztBcI4430.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/官图/ChcCSF2QDlSAGG3yAAvKzSMV0OE604.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/官图/ChcCP12QDk-ABjrLAAqXJqeVlW0812.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/其它细节/ChcCSV0CSM-APMl1AAgYXnhGKSw567.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/其它细节/ChcCRF0CSM6AZ81IAAmkvBEE-8M749.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/重要特点/-s224.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/fanyi_use.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/下载文件和图片.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -629,34 +572,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js混淆反爬.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1554">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="46" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1584412808945" expanded="true" signature="307:727" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/autohome/autohome/autohome/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="419">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="14" />
           <folding>
             <marker date="1584432054748" expanded="true" signature="202:207" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/jiangxiligong/1904_crawl_python3/Lib/site-packages/scrapy/pipelines/images.py">
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/autohome/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="168" column="27" selection-start-line="168" selection-start-column="21" selection-end-line="168" selection-end-column="27" />
+        <state relative-caret-position="255">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/autohome/settings.py">
+    <entry file="file://C:/jiangxiligong/1904_crawl_python3/Lib/site-packages/scrapy/pipelines/images.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-277">
-          <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
+        <state relative-caret-position="213">
+          <caret line="159" column="23" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/autohome/autohome/autohome/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        <state relative-caret-position="297">
+          <caret line="40" selection-start-line="40" selection-end-line="41" selection-end-column="23" />
           <folding>
             <element signature="e#194#203#0" expanded="true" />
             <marker date="1584434005595" expanded="true" signature="372:377" ph="..." />
@@ -666,47 +620,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/中控方向盘/1adc886453ba3a2d8282005bf557f5cfdb25c9c6.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/中控方向盘/1ff48af258115ad7ecfb48d9475d329f60ba9ef9.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/中控方向盘/7ac44457940dbf10c57725d1e47efa0604e1c003.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/中控方向盘/68ea5deeaf5d27c8fba30fe1bd5091e86af3bc02.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/scrapy/Scrapy框架架构.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/autohome/autohome/autohome/spiders/bmw8.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="507">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-            <marker date="1584434933728" expanded="true" signature="753:1146" ph="..." />
+            <marker date="1584498075879" expanded="true" signature="753:1146" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/官图/7fb12f1feb1a8acb4add840dd659cc28f4f86562.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/images/官图/d03d84c3cd4170ade5b67ed5c594b5737516a5bb.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autohome/autohome/start.py">
+    <entry file="file://C:/jiangxiligong/1904_crawl_python3/Lib/site-packages/scrapy/http/request/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="-99">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy/Scrapy框架架构.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-6678" />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/autohome/autohome/autohome/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="91" column="25" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="25" />
         </state>
       </provider>
     </entry>

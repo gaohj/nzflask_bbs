@@ -30,6 +30,7 @@ class Bmw8Spider(CrawlSpider):
             # for url in urls:
             #     url = response.urljoin(url)
             #     print(url)
+
             urls = list(map(lambda url:response.urljoin(url),urls))
             item = AutohomeItem(category=category,image_urls=urls)
             yield item
