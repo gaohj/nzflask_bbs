@@ -2,15 +2,13 @@
 import scrapy
 import re
 from soufang.items import NewHouseItem,EsfHouseItem
-from scrapy_redis.spiders import RedisSpider
+
 
 class SfwSpider(scrapy.Spider):
     name = 'sfw'
     allowed_domains = ['fang.com']
-    # start_urls = ['https://www.fang.com/SoufunFamily.htm']
+    start_urls = ['https://www.fang.com/SoufunFamily.htm']
     # 这个方法是拿出新房和二手房的 url
-    redis_key = "fang:start_urls"
-
     def parse(self, response):
         trs = response.xpath("//div[@class='outCont']//tr")
         for tr in trs:
