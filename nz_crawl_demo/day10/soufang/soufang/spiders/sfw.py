@@ -4,7 +4,7 @@ import re
 from soufang.items import NewHouseItem,EsfHouseItem
 from scrapy_redis.spiders import RedisSpider
 
-class SfwSpider(scrapy.Spider):
+class SfwSpider(RedisSpider):
     name = 'sfw'
     allowed_domains = ['fang.com']
     # start_urls = ['https://www.fang.com/SoufunFamily.htm']
