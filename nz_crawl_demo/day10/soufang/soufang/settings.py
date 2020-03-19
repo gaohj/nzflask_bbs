@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for jianshu project
+# Scrapy settings for soufang project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'jianshu'
+BOT_NAME = 'soufang'
 
-SPIDER_MODULES = ['jianshu.spiders']
-NEWSPIDER_MODULE = 'jianshu.spiders'
+SPIDER_MODULES = ['soufang.spiders']
+NEWSPIDER_MODULE = 'soufang.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'jianshu (+http://www.yourdomain.com)'
+#USER_AGENT = 'soufang (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -43,19 +43,18 @@ DEFAULT_REQUEST_HEADERS = {
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
   'Accept-Language': 'en',
   'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36'
-
 }
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'jianshu.middlewares.JianshuSpiderMiddleware': 543,
+#    'soufang.middlewares.SoufangSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   'jianshu.middlewares.SeleniumMiddleware': 100,
+   'soufang.middlewares.UserAgentDownloadMiddleware': 543,
 }
 
 # Enable or disable extensions
@@ -67,8 +66,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   # 'jianshu.pipelines.JianshuPipeline': 300,
-   'jianshu.pipelines.JianshuTwistedSpiderPipeline': 300,
+   'soufang.pipelines.SoufangPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

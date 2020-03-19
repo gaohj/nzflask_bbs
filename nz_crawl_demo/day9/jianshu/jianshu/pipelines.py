@@ -52,10 +52,10 @@ class JianshuTwistedSpiderPipeline(object):
             'password':'KANGBAZI01!',
             'database':'jianshu',
             'charset':'utf8',
-            'cursorclass':cursors.DictCursor
+            'cursorclass':cursors.DictCursor # 游标类
         }
 
-        self.dbpool = adbapi.ConnectionPool('pymysql',**dbparams)
+        self.dbpool = adbapi.ConnectionPool('pymysql',**dbparams) #异步连接池
         self._sql = None
 
     @property
@@ -74,7 +74,7 @@ class JianshuTwistedSpiderPipeline(object):
     def insert_item(self,cursor,item):#item传递过来之前 先把游标 对象传过来
         cursor.execute(self.sql,(item['title'], item['content'],item['article_id']))
 
-    def handle_error(self,error,item,spider):#item传递过来之前 先把游标 对象处
+    def handle_error(self,error,item,spider):
         print("="*20+"error"+"="*20)
         print(error)
         print("=" * 20 + "error" + "=" * 20)

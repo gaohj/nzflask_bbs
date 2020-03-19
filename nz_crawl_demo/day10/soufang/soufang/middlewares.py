@@ -8,7 +8,7 @@
 from scrapy import signals
 
 
-class JianshuSpiderMiddleware(object):
+class SoufangSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -56,7 +56,7 @@ class JianshuSpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class JianshuDownloaderMiddleware(object):
+class SoufangDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
@@ -101,35 +101,16 @@ class JianshuDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-import time
-from scrapy.http.response.html import HtmlResponse
-class SeleniumMiddleware(object):
 
-    def __init__(self):
-        self.options = Options()
-        self.options.add_argument("--headless")
-        # self.options.add_argument("--proxy-server:http://")
-        self.driver = webdriver.Chrome(chrome_options=self.options)
 
+import random
+class UserAgentDownloadMiddleware(object):
+    USER_AGENTS =[
+        'Opera/9.80 (Windows NT 6.1; U; en) Presto/2.8.131 Version/11.11',
+        'Mozilla/5.0 (X11; Linux i686; rv:64.0) Gecko/20100101 Firefox/64.0',
+
+    ]
 
     def process_request(self,request,spider):
-        self.driver.get(request.url)
-        time.sleep(1)
-        try:
-            while True:
-                showMore = self.driver.find_element_by_class_name('H7E3vT')
-                showMore.click()
-                time.sleep(0.5)
-                if not showMore:
-                    break
-
-        except:
-            pass
-        source = self.driver.page_source
-        # print(source)
-        #截获请求让谷歌浏览器去发送，再返回
-        response = HtmlResponse(url=self.driver.current_url,body=source,request=request,encoding='utf-8')
-
-        return response
+        user_agent = random.choice(self.USER_AGENTS)
+        request.headers['User-Agent'] = user_agent
