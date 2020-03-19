@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import re
+from soufang.items import NewHouseItem,EsfHouseItem
+
 
 class SfwSpider(scrapy.Spider):
     name = 'sfw'
@@ -43,8 +45,9 @@ class SfwSpider(scrapy.Spider):
 
                 # print("新房%s" % newhouse_url)
                 # print("二手房%s" % erf_url)
-                yield scrapy.Request(url=newhouse_url,callback=self.parse_newhouse,meta={"info":(province,city)})
-                # yield scrapy.Request(url=erf_url,callback=self.parse_esf,meta={"info":(province,city)})
+                # print(province)
+                #yield scrapy.Request(url=newhouse_url,callback=self.parse_newhouse,meta={"info":(province,city)})
+                yield scrapy.Request(url=erf_url,callback=self.parse_esf,meta={"info":(province,city,erf_url)})
                 break
             break
     # 新房的内容
@@ -61,8 +64,49 @@ class SfwSpider(scrapy.Spider):
             rooms = list(filter(lambda x:x.endswith("居"),house_type_list))
             area = "".join(li.xpath(".//div[contains(@class,'house_type')]/text()").getall())
             area = re.sub(r'\s|－|/|',"",area)
-            print(area)
+            address = li.xpath(".//div[@class='address']/a/@title").get()
+            district_text = "".join(li.xpath(".//div[@class='address']/a//text()").getall())
+            district_text = re.sub(r'\s',"",district_text)
+            district = re.search(r".*\[(.+)\].*",district_text).group(1)
+            price = "".join( li.xpath(".//div[@class='nhouse_price']//text()").getall())
+            price = re.sub(r"\s|广告","",price)
+            sale =  li.xpath(".//div[@class='fangyuan']/span/text()").get()
+            origin_url = li.xpath(".//div[@class='nlcd_name']/a/@href").get()
+            origin_url = response.urljoin(origin_url)
+            item = NewHouseItem(province=province,city=city,name=name,rooms=rooms,area=area,address=address,district=district,sale=sale,price=price,origin_url=origin_url)
+            yield item
 
+        next_url = response.xpath("//div[@class='page']//a[@class='next']/@href").get()
+        if next_url:
+            yield scrapy.Request(url=response.urljoin(next_url),callback=self.parse_newhouse,meta={"info":(province,city)})
     #二手房的内容
     def parse_esf(self,response):
-        pass
+        province, city,erf_url = response.meta.get('info')
+        dls = response.xpath("//div[contains(@class,'shop_list')]/dl")
+        for dl in dls:
+            item = EsfHouseItem(province=province,city=city)
+            item['name'] = dl.xpath(".//h4[@class='clearfix']/a/span/text()").get()
+            infos = dl.xpath(".//p[@class='tel_shop']/text()").getall()
+            infos = list(map(lambda x:re.sub(r'\s',"",x),infos))
+            for info in infos:
+                if "厅" in info:
+                    item['rooms'] = info
+                elif "㎡" in info:
+                    item['area'] = info
+                elif "层" in info:
+                    item['floor'] = info
+                elif "向" in info:
+                    item['toward'] = info
+                else:
+                    item['year'] = info.replace("年建","")
+            item['address'] = dl.xpath(".//p[@class='add_shop']/span/text()").get()
+            item['price'] = "".join(dl.xpath(".//dd[@class='price_right']/span[1]//text()").getall())
+            item['unit'] = "".join(dl.xpath(".//dd[@class='price_right']/span[2]//text()").getall())
+            item['origin_url'] = response.urljoin(dl.xpath(".//h4[@class='clearfix']/a/@href").get())
+            # yield item
+        print(erf_url)
+        # next_url = response.xpath("//*[@id='list_D10_15']/p[3]/a/@href").get()
+        # print(next_url)
+        # if next_url:
+        #     yield scrapy.Request(url=response.urljoin(next_url), callback=self.parse_esf,
+        #                          meta={"info": (province, city)})
