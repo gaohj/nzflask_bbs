@@ -21,7 +21,7 @@
   1. application (task producer) 任务生产者  
   2. 任务队列 broker （task queue ） redis 或者 rabbitMQ  做消息中间件 
   3. 任务调度  celery beat （task scheduler） 对任务队列中的任务进行调度  
-  4. 消费者  worker （task consumer）可以有多个 
+  4. 消费者  worker （task consumer）可以有多个 真正干活的是它 
   5. 处理结果的存储  backend 数据库  缓存 都可以   mysql  redis  rabbitMQ 
 
   
@@ -67,8 +67,16 @@
   ## 启动  broker  
 
   ```python
-celery worker -A celery_app名称 -I INFO
-  celery worker -A task -I INFO
+celery worker -A celery_app名称 -l INFO
+  celery worker -A task -l INFO
+  
+  -A 包含 app=Celery()文件名  不需要.py  
+  -l 显示  日志级别  INFO ERROR等   
+  
+  
+  
+  
+  
   task.py  
   
   
@@ -147,6 +155,141 @@ celery worker -A celery_app名称 -I INFO
   ```
   
   
+  
+  
+  
+  ### 常用的配置 信息  
+  
+  ```python
+  
+  CELERY_TIMEZONE = 'Asia/Shanghai'
+  
+  #是否使用本地的时区
+  CELERY_ENABLE_UTC = False
+  
+  #重写task的属性
+  CELERY_ANNOTATIONS = {'apps.task1.add':{'rate_limit':'10/s'}}
+  
+  #并发worker 数量 
+  CELERY_CONCURRENCY = 6
+  # 每次 worker 去任务队列中取任务的 数量 
+  CELERY_PREFETH_MULTIPLIRE = 6 
+  
+  #每个worker执行多少次就会被杀掉  
+  CELERY_MAX_TASKS_PRE_CHILD = 5
+  
+  
+  #单个任务执行的最大时间  
+  CELERY_TASK_TIME_LIMIT = 60*3 
+  
+  #任务结果执行的超时时间  
+  CELERY_TASK_RESULT_EXPIRES = 1000 
+  ```
+  
+  ## 调用 异步任务  
+  
+  * 任务.delay() 接收的方法简单   
+  * 任务.apply_async(args[参数1，参数2],kwargs={key:value}) 可以接受复杂参数    常用  
+  * 任务.send_task('task1.add',args=[66,88]) 不经常用  
+  
+  
+  
+  ### 启动多个worker 
+  
+  ```
+  celery worker -A celeryapp名 -l INFO -n 名称@%h  
+  
+  
+  -A 包含 app=Celery()文件名  不需要.py  
+  -l 显示  日志级别  INFO ERROR等   
+  
+  -n worker名称    
+  
+  %h 主机名 包括域名 
+  %n 仅限主机名 
+  %d 仅限域名   
+  
+  举例: celery worker -A apps -l INFO -n kangbazi1@%h 
+  
+  当三个任务 三个worker  那么平均分配   
+  当三个任务  两个worker 先一个worker一个任务  谁先完成 另外一个交给哪个worker去处理
+  
+  
+  ```
+  
+  
+  
+  ## 配置多个队列    
+  
+  * apply_async(queue=队列名)
+  * app.task(queue=队列名)
+  * 配置文件的方式   
+  
+  ```python
+  from kombu import Queue
+  CELERY_QUEUES = (
+      Queue('task1_add',routing_key='task1_add'),
+      Queue('task1_add2',routing_key='task1_add2'),
+      Queue('task2_add3',routing_key='task2_add3'),
+  )
+  
+  #给任务分配 queue 和  routing_key
+  CELERY_ROUTES = {
+      'apps.task1.add2':{'queue':'task1_add2','routing_key':'task1_add2'},
+      'apps.task2.add3':{'queue':'task2_add3','routing_key':'task2_add3'},
+  }
+  ```
+  
+  
+  
+  
+  
+  ## 定时任务  
+  
+  ```
+  linux  定时任务  
+  crontab -e 创建定时任务  
+  crontab -l 列出所有的定时任务 
+  crontab -r 清空所有的计划任务  
+  
+  
+  分      时       日      月     周      命令  
+  0-59   0-23    1-31     1-12   0-6  
+  
+  *       *        *      *      *   
+  
+  0       */1      *      *      *   每小时执行一次  
+  0-5     8,12,15  *      *      *   
+  
+  
+  celery 创建定时任务  跟创建异步任务一样   
+  from apps import app
+  import time
+  def beat_task(x,y,name):
+      time.sleep(5)
+      print(x+y)
+      print(name)
+      return 'hello celery beat'
+  
+  
+  
+  from datetime import timedelta
+  from celery.schedules import crontab
+  CELERYBEAT_SCHEDULE = {
+      'python1904':{
+          'task':'apps.beat_task.beat_task',#要执行的任务的名字
+          'schedule':timedelta(seconds=5),#要执行的任务的名字
+          'args':(5,8),
+          'kwargs':{'name':'kangbazi'},
+          'options':{
+              'queue':'beat_task',
+              'routing_key':'beat_task',
+          }
+  
+  
+      }
+  }
+  ```
   
   
   
