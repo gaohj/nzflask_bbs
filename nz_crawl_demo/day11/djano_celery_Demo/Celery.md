@@ -244,81 +244,7 @@ celery worker -A celery_app名称 -l INFO
   
   
   
-  ## 定时任务 
-  
-   ### 定时任务参数  
-  
-  ```
-  crontab参数：
-  
-  crontab()实例化的时候没设置任何参数，都是使用默认值,表示1分钟。crontab常用有5个参数：
-  
-  minute：分钟，范围0-59；
-  
-  hour：小时，范围0-23；
-  
-  day_of_week：星期几，范围0-6。以星期天为开始，即0为星期天。这个星期几还可以使用英文缩写表示，例如“sun”表示星期天；
-  
-  day_of_month：每月第几号，范围1-31；
-  
-  month_of_year：月份，范围1-12。
-  
-  注意：
-  
-  默认值都是"*"星号，代表任意时刻
-  
-  举例：
-  
-  crontab() 每分钟执行
-  
-  crontab(minute=15) 每小时的15分时刻执行一次任务
-  
-  crontab(minute=0, hour=0) 每天0点0分时刻执行任务
-  
-  crontab(minute='59',hour='11') 每天的11点59分执行一次任务
-  
-  crontab(minute='0,30')
-  
-  0分和30分执行一次任务，逗号是表示多个表达式or逻辑关系
-  
-  crontab(hour='9-12,20')
-  
-  指定9点到12点和20点中每分钟执行任务
-  
-  其他举例：
-  
-  crontab(minute=0, hour=0) 每天午夜执行
-  
-  crontab(minute=0, hour=’*/3’) 每三个小时执行: 午夜, 3am, 6am, 9am, 正午, 3pm, 6pm, 9pm.
-  
-  crontab(minute=0,hour=’0,3,6,9,12,15,18,21’) 同上
-  
-  crontab(minute=’*/15’) 每15分钟执行
-  
-  crontab(day_of_week=’sunday’) 星期日每分钟
-  
-  crontab(minute=’‘,hour=’‘, day_of_week=’sun’) 同上
-  
-  crontab(minute=’*/10’,hour=’3,17,22’, day_of_week=’thu,fri’) 每10分钟执行，仅限于周六日3-4 am, 5-6 pm, and 10-11 pm
-  
-  crontab(minute=0, hour=’/2,/3’) 偶数小时或者能被3整除的小时数执行
-  
-  crontab(minute=0, hour=’*/5’) 被5整除的小时数，如3pm
-  
-  crontab(minute=0, hour=’*/3,8-17’) 8am-5pm能被3整除的
-  
-  crontab(0, 0, day_of_month=’2’) 每月第2天
-  
-  crontab(0, 0,day_of_month=’2-30/3’) 每偶数天
-  
-  crontab(0, 0,day_of_month=’1-7,15-21’) 每月1和3周
-  
-  crontab(0, 0, day_of_month=’11’,month_of_year=’5’) 每年5月11日
-  
-  crontab(0, 0,month_of_year=’*/3’) 每个季度第1月
-  ```
-  
-  
+  ## 定时任务  
   
   ```
   linux  定时任务  
@@ -345,21 +271,14 @@ celery worker -A celery_app名称 -l INFO
       print(name)
       return 'hello celery beat'
   
-  配置文件: 
   
-  CELERY_IMPORTS = (
-       ...
-      'apps.beat_task',
-  )
   
   from datetime import timedelta
   from celery.schedules import crontab
   CELERYBEAT_SCHEDULE = {
       'python1904':{
           'task':'apps.beat_task.beat_task',#要执行的任务的名字
-          #'schedule':timedelta(seconds=5),#5秒执行一次
-          'schedule':crontab(minute=43,hour=16), #详细的小时 分钟 
-          'schedule':crontab(hours='*/3'), #每3个小时执行一次
+          'schedule':timedelta(seconds=5),#要执行的任务的名字
           'args':(5,8),
           'kwargs':{'name':'kangbazi'},
           'options':{
@@ -370,106 +289,8 @@ celery worker -A celery_app名称 -l INFO
   
       }
   }
-  
-  
-  > 启动 beat 和 worker   （同时启动）
-  
-  celery -B -A apps worker -l INFO   #每隔五秒执行一次
   ```
   
   
   
-  ### 实战  
   
-  > 增量爬取 以及 定时爬取 
-  
-  * 增量 对单条数据操作 查询数据库 存在添加 不存在跳过   
-  * pandas 全量对比 
-  * 分页爬取   
-
-
-
-## django 使用celery   
-
-> pip install django==2.2.0
->
-> pip install django-celery 
->
-> pip install redis==2.10.6 
-
-
-
-## flask 使用celery 
-
-```
-1.单独创建一个tasks.py  
-from flask import Flask
-from celery import Celery
-
-app = Flask(__name__)
-app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
-app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
-
-celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
-celery.conf.update(app.config)
-
-@celery.task 
-def send_mail(参数):
-	操作  
-	
-views.py  
-
-from tasks import send_mail
-def 方法():
-	send_mail(参数):
-	
-	
-1.启动worker  
-2.访问视图函数  
-
-
-#encoding: utf-8
-
-from celery import Celery
-from flask_mail import Message
-from flask import Flask
-import config
-
-app = Flask(__name__)
-app.config.from_object(config)
-mail.init_app(app)
-alidayu.init_app(app)
-
-
-# 运行本文件：
-# 在windows操作系统上：
-# celery -A tasks.celery worker --pool=solo --loglevel=info
-# 在类*nix操作系统上：
-# celery -A tasks.celery worker --loglevel=info
-
-def make_celery(app):
-    celery = Celery(app.import_name, backend=app.config['CELERY_RESULT_BACKEND'],
-                    broker=app.config['CELERY_BROKER_URL'])
-    celery.conf.update(app.config)
-    TaskBase = celery.Task
-    class ContextTask(TaskBase):
-        abstract = True
-        def __call__(self, *args, **kwargs):
-            with app.app_context():
-                return TaskBase.__call__(self, *args, **kwargs)
-    celery.Task = ContextTask
-    return celery
-
-celery = make_celery(app)
-
-
-@celery.task
-def send_mail(subject,recipients,body):
-    message = Message(subject=subject,recipients=recipients,body=body)
-    mail.send(message)
-
-@celery.task
-def send_sms_captcha(telephone,captcha):
-    alidayu.send_sms(telephone,code=captcha)
-```
-
