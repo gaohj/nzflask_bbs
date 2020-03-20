@@ -109,7 +109,7 @@ getall()返回的是Selector 中的所有文本 是个列表
    #### 使用命令创建一个爬虫：
 
    ```
-   scrapy genspider qsbk "qiushibaike.com"
+   scrapy genspider qsbk qiushibaike.com
    ```
 
    创建了一个名字叫做`qsbk`的爬虫，并且能爬取的网页只会限制在`qiushibaike.com`这个域名下。
