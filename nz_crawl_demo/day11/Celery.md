@@ -64,8 +64,90 @@
 
   
 
-  
+  ## 启动  broker  
 
+  ```python
+celery worker -A celery_app名称 -I INFO
+  celery worker -A task -I INFO
+  task.py  
   
-
+  
+  from celery import Celery
+  
+  #broker任务队列  生产者生产任务 放到这里边   消费者从这里边拿
+  #backend 存储  消费者处理好以后 将结果存放到这里边
+  app = Celery('celery_1904',broker='redis://127.0.0.1:6379/1',backend='redis://127.0.0.1:6379/2')
+  
+  @app.task
+  def hello(name):
+      print("hello world:{}".format(name))
+      return "hello world:{}".format(name)
+  
+  @app.task
+  def sums(x,y):
+      print(x+y)
+      return x+y
+  
+  
+  hello.py 
+  
+  #导入任务
+  from task import hello,sums
+  
+  if __name__ == "__main__":
+      hello.delay('world')
+      sums.delay(5,10)
+  
+  ```
+  
+  
+  
+  ## 抽取信息到配置文件  
+  
+  ```python
+  apps 
+  	__init__.py 
+  	celery_conf.py
+  	task1.py
+  	task2.py 
+  	
+  hello.py 
+  
+  
+  __init__.py 
+  	from celery import Celery
+  	app = Celery('kangbazi1904')
+  
+  	app.config_from_object('apps.celery_conf')
+  	
+  celery_conf.py
+  	BROKER_URL = 'redis://127.0.0.1:6379/1'
+  
+  	CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379/2'
+  
+  	CELERY_IMPORTS = (
+      	'apps.task1',
+      	'apps.task2',
+  	)
+  	
+  hello.py 
+  	from apps.task1 import add,add2
+  	from apps.task2 import add3
+  
+  	if __name__ == "__main__":
+     		# hello.delay('world')
+      	# sums.delay(5,10)
+      	add.delay(10,20)
+     		add2.delay(30,40)
+      	add3.delay(50,15)
+  
+  
+  celery -A worker apps
+  运行 hello.py  将任务放到任务队列中 等待消费者去处理 并且将结果存到redis 中
+  ```
+  
+  
+  
+  
+  
   
