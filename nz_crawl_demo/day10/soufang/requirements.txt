@@ -30,7 +30,7 @@ PyMySQL==0.9.3
 pyOpenSSL==19.1.0
 pypiwin32==223
 pytesseract==0.3.3
-pywin32==227
+pywin32==301
 queuelib==1.5.0
 redis==3.4.1
 requests==2.23.0
